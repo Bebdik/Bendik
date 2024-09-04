@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text color */
 }
 
 /* Navigation Bar */
@@ -11,8 +12,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Darker shade for the navbar */
     padding: 10px 20px;
+    border-bottom: 2px solid #444; /* Border for visual separation */
 }
 
 .nav-list {
@@ -28,14 +30,20 @@ body {
 
 .nav-list li a {
     text-decoration: none;
-    color: white;
+    color: #f0f0f0; /* Light text color */
     font-weight: bold;
+}
+
+.nav-list li a:hover {
+    color: #1abc9c; /* Hover effect color */
 }
 
 .search-bar input {
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Darker border */
+    background-color: #333; /* Darker input background */
+    color: #f0f0f0; /* Light input text */
 }
 
 /* Main Content Area */
@@ -47,11 +55,12 @@ body {
 /* Infobox */
 .infobox {
     flex: 1;
-    background-color: #e9ecef;
+    background-color: #2b2b2b; /* Darker background for infobox */
     padding: 20px;
     margin-right: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    color: #f0f0f0; /* Light text color */
 }
 
 /* Infobox Image */
@@ -61,10 +70,12 @@ body {
     height: auto; /* Maintains aspect ratio */
     border-radius: 5px;
     margin-bottom: 20px; /* Space between image and content */
+    border: 2px solid #444; /* Border around the image */
 }
 
 .infobox h2 {
     margin-top: 0;
+    color: #1abc9c; /* Light green color for headers */
 }
 
 .infobox ul {
@@ -79,10 +90,11 @@ body {
 /* Content Sections */
 .content {
     flex: 3;
-    background-color: white;
+    background-color: #2b2b2b; /* Dark background */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    color: #f0f0f0; /* Light text color */
 }
 
 .content section {
@@ -90,10 +102,12 @@ body {
 }
 
 .content h1, .content h2 {
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #444; /* Subtle border for headers */
     padding-bottom: 5px;
+    color: #1abc9c; /* Light green color for headers */
 }
 
 .content p {
     line-height: 1.6;
+    color: #f0f0f0; /* Light text color */
 }
