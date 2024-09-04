@@ -1,174 +1,178 @@
-body {
-  --light-gray: #f7f7fc;
+import MarkdownIt from './markdown-it.js'
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100px 1fr;
-  min-height: 100vh;
-  min-width: 100vh;
-}
+var self = new Hyperdrive(location)
+var pathname = location.pathname.endsWith('/') ? location.pathname + 'index.md' : location.pathname
+var isEditing = location.search === '?edit'
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+function h (tag, attrs, ...children) {
+  var el = document.createElement(tag)
+  for (let k in attrs) {
+    if (k === 'cls') el.className = attrs[k]
+    else el.setAttribute(k, attrs[k])
+  }
+  for (let child of children) el.append(child)
+  return el
 }
 
-button {
-  padding: 0.5rem 1rem;
-  background: #fff;
-  border: 1px solid #88f;
-  border-radius: 4px;
-  color: blue;
-  outline: 0;
-  font-size: 12px;
+async function ensureParentDir (p) {
+  let parts = p.split('/').slice(0, -1)
+  let acc = []
+  for (let part of parts) {
+    acc.push(part)
+    await self.mkdir(acc.join('/')).catch(e => undefined)
+  }
 }
 
-button:active {
-  background: var(--light-gray);
-}
+customElements.define('wiki-header', class extends HTMLElement {
+  constructor () {
+    super()
+    this.load()
+  }
 
-button.primary {
-  color: #fff;
-  background: blue;
-  border-color: blue;
-}
+  async load () {
+    this.info = await self.getInfo()
+    this.render()
+  }
 
-header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  background: var(--light-gray);
-}
+  render () {
+    this.append(h('h1', {}, h('a', {href: '/'}, this.info.title)))
+    if (this.info.description) {
+      this.append(h('p', {}, this.info.description))
+    }
 
-nav {
-  border-right: 1px solid #ccd;
-}
+    if (this.info.writable) {
+      let buttons = []
 
-main {
-  padding-left: 20px;
-}
+      if (!isEditing) {
+        let newPage = h('button', {}, 'New Page')
+        newPage.addEventListener('click', async (e) => {
+          var newPathname = prompt('Enter the path of the new page')
+          if (!newPathname) return
+          if (!newPathname.endsWith('.md')) newPathname += '.md'
+          await ensureParentDir(newPathname)
+          if ((await self.stat(newPathname).catch(e => undefined)) === undefined) {
+            await self.writeFile(newPathname, `# ${newPathname}`)
+          }
+          location = newPathname + '?edit'
+        })
+        buttons.push(newPage)
 
-wiki-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100px;
-  padding: 0 20px;
-}
+        if (/\.(png|jpe?g|gif|mp4|mp3|ogg|webm|mov)$/.test(pathname) === false) {
+          let editPage = h('button', {}, 'Edit Page')
+          editPage.addEventListener('click', async (e) => {
+            location.search = '?edit'
+          })
+          buttons.push(editPage)
+        }
+      } else {
+        let savePage = h('button', {cls: 'primary'}, 'Save Page')
+        savePage.addEventListener('click', async (e) => {
+          let value = document.body.querySelector('textarea.editor').value
+          await self.writeFile(pathname, value)
+          location.search = ''
+        })
+        buttons.push(savePage)
+      }
 
-wiki-header h1,
-wiki-header p {
-  margin: 0.25rem 0;
-  line-height: 1;
-}
+      let deletePage = h('button', {}, 'Delete Page')
+      deletePage.addEventListener('click', async (e) => {
+        if (!confirm('Delete this page?')) return
+        await self.unlink(pathname)
+        if (isEditing) location.search = ''
+        else location.reload()
+      })
+      buttons.push(deletePage)
 
-wiki-header h1 a {
-  color: inherit;
-}
+      let editProps = h('button', {}, 'Edit Drive Properties')
+      editProps.addEventListener('click', async (e) => {
+        await navigator.drivePropertiesDialog(self.url)
+        if (!isEditing) location.reload()
+      })
+      buttons.push(editProps)
 
-wiki-header .admin {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-}
+      this.append(h('div', {cls: 'admin'}, ...buttons))
+    }
+  }
+})
 
-wiki-header .admin button {
-  margin-left: 5px;
-}
+customElements.define('wiki-nav', class extends HTMLElement {
+  constructor () {
+    super()
+    this.load()
+  }
 
-wiki-nav {
-  display: block;
-  overflow: hidden;
-}
+  async load () {
+    this.files = await self.readdir('/', {recursive: true})
+    this.files = this.files.filter(file => file.endsWith('.md'))
+    this.files.sort()
+    this.render()
+  }
 
-wiki-nav a {
-  display: block;
-  color: #445;
-  padding: 0.5rem 1rem;
-  margin: 0;
-}
+  render () {
+    for (let file of this.files) {
+      let href = `/${file}`
+      let cls = pathname === href ? 'active' : ''
+      this.append(h('a', {href, cls}, file.slice(0, -3)))
+    }
+    if (this.files.length === 0) {
+      this.append(h('div', {cls: 'empty'}, 'This Wiki has no pages'))
+    }
+  }
+})
 
-wiki-nav a:last-child {
-  border-bottom: 0;
-}
+customElements.define('wiki-page', class extends HTMLElement {
+  constructor () {
+    super()
+    this.render()
+  }
 
-wiki-nav a:hover {
-  text-decoration: none;
-  background: var(--light-gray);
-}
+  async render () {
+    // check existence
+    let stat = await self.stat(pathname).catch(e => undefined)
+    if (!stat) {
+      // 404
+      let canEdit = (await self.getInfo()).writable
+      if (canEdit) {
+        let btn = h('button', {}, 'Create Page')
+        btn.addEventListener('click', async (e) => {
+          await ensureParentDir(pathname)
+          await self.writeFile(pathname, `# ${pathname}`)
+          location.search = '?edit'
+        })
+        this.append(h('div', {cls: 'empty'}, h('h2', {}, 'This Page Does Not Exist'), btn))
+      } else {
+        this.append(h('div', {cls: 'empty'}, h('h2', {}, 'This Page Does Not Exist')))
+      }
+      return
+    }
 
-wiki-nav a.active {
-  background: var(--light-gray);
-}
-
-wiki-nav .empty {
-  padding: 0.6rem 1rem;
-  color: #667;
-}
-
-.content > :first-child {
-  margin-top: 1rem;
-}
-.content hr {
-  border: 0;
-  border-top: 1px solid #ccd;
-}
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5 { margin: 1.5rem 0; }
-.content h1 { font-size: 2em; }
-.content h2 { font-size: 1.7em; }
-.content h3 { font-size: 1.4em; }
-.content h4 { font-size: 1.3em; }
-.content h5 { font-size: 1.1em; }
-.content pre {
-  background: var(--light-gray);
-  padding: 1em;
-  overflow: auto;
-}
-.content p,
-.content ul,
-.content ol {
-  line-height: 1.5;
-}
-.content table {
-  margin: 1em 0;
-}
-.content blockquote {
-  border-left: 10px solid var(--light-gray);
-  margin: 1em 0;
-  padding: 1px 1.5em;
-  color: #667;
-}
-
-wiki-page .empty {
-  padding: 20vh 5vw 40vh 0;
-  text-align: center;
-  font-size: 23px;
-  color: #667;
-}
-
-wiki-page .empty button {
-  font-size: 18px;
-}
-
-wiki-page textarea.editor {
-  width: calc(100% - 20px);
-  height: calc(100vh - 130px);
-  margin-top: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ccd;
-  font-size: 17px;
-  letter-spacing: 0.75px;
-  line-height: 1.4;
-  outline: 0;
-}
+    // embed content
+    if (/\.(png|jpe?g|gif)$/i.test(pathname)) {
+      this.append(h('img', {src: pathname}))
+    } else if (/\.(mp4|webm|mov)/i.test(pathname)) {
+      this.append(h('video', {controls: true}, h('source', {src: pathname})))
+    } else if (/\.(mp3|ogg)/i.test(pathname)) {
+      this.append(h('audio', {controls: true}, h('source', {src: pathname})))
+    } else {
+      let content = await self.readFile(pathname)
+      if (isEditing) {
+        // render editor
+        let textarea = h('textarea', {cls: 'editor'}, content)
+        this.append(textarea)
+      } else {
+        // render content
+        if (/\.(md|html)$/i.test(pathname)) {
+          if (pathname.endsWith('.md')) {
+            let md = new MarkdownIt()
+            content = md.render(content)
+          }
+          let contentEl = h('div', {cls: 'content'})
+          contentEl.innerHTML = content
+          this.append(contentEl)
+        } else {
+          this.append(h('pre', {cls: 'content'}, content))
+        }
+      }
+    }
+  }
+})
