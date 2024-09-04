@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50; /* Darker shade for the navbar */
+    background-color: #751fde; /* Darker shade for the navbar */
     padding: 10px 20px;
     border-bottom: 2px solid #444; /* Border for visual separation */
 }
