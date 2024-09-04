@@ -1,126 +1,174 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e1e; /* Dark background */
-    color: #f0f0f0; /* Light text color */
+  --light-gray: #f7f7fc;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c3e50; /* Darker shade for the navbar */
-    padding: 10px 20px;
-    border-bottom: 2px solid #444; /* Border for visual separation */
+a {
+  text-decoration: none;
 }
 
-.nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+a:hover {
+  text-decoration: underline;
 }
 
-.nav-list li {
-    margin-right: 20px;
+button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #88f;
+  border-radius: 4px;
+  color: blue;
+  outline: 0;
+  font-size: 12px;
 }
 
-.nav-list li a {
-    text-decoration: none;
-    color: #f0f0f0; /* Light text color */
-    font-weight: bold;
+button:active {
+  background: var(--light-gray);
 }
 
-.nav-list li a:hover {
-    color: #1abc9c; /* Hover effect color */
+button.primary {
+  color: #fff;
+  background: blue;
+  border-color: blue;
 }
 
-.search-bar input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #444; /* Darker border */
-    background-color: #333; /* Darker input background */
-    color: #f0f0f0; /* Light input text */
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: var(--light-gray);
 }
 
-/* Main Content Area */
-.container {
-    display: flex;
-    margin: 20px;
+nav {
+  border-right: 1px solid #ccd;
 }
 
-/* Infobox */
-.infobox {
-    flex: 1;
-    background-color: #2b2b2b; /* Darker background for infobox */
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    color: #f0f0f0; /* Light text color */
+main {
+  padding-left: 20px;
 }
 
-.infobox .heading h2,
-.infobox .heading h3 {
-    color: #1abc9c; /* Light green color for headers */
-    margin: 0 0 10px 0;
-    border-bottom: 1px solid #444; /* Separator */
-    padding-bottom: 5px;
+wiki-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0 20px;
 }
 
-/* Infobox Image */
-.infobox-img {
-    width: 100%;
-    max-width: 1200px; /* Ensures the image doesn't exceed 1200px width */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 5px;
-    margin-bottom: 20px; /* Space between image and content */
-    border: 2px solid #444; /* Border around the image */
+wiki-header h1,
+wiki-header p {
+  margin: 0.25rem 0;
+  line-height: 1;
 }
 
-/* Infobox Data Sections */
-.infobox-group {
-    margin-bottom: 20px;
+wiki-header h1 a {
+  color: inherit;
 }
 
-.infobox-datarow {
-    margin-bottom: 10px;
+wiki-header .admin {
+  position: absolute;
+  top: 30px;
+  right: 20px;
 }
 
-.data-heading {
-    font-weight: bold;
-    color: #f0f0f0; /* Light text color */
+wiki-header .admin button {
+  margin-left: 5px;
 }
 
-.data-content {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: #b0b0b0; /* Slightly lighter color for list items */
+wiki-nav {
+  display: block;
+  overflow: hidden;
 }
 
-.data-content li {
-    margin-left: 10px;
-    padding-left: 10px;
+wiki-nav a {
+  display: block;
+  color: #445;
+  padding: 0.5rem 1rem;
+  margin: 0;
 }
 
-/* Content Sections */
-.content {
-    flex: 3;
-    background-color: #2b2b2b; /* Dark background */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    color: #f0f0f0; /* Light text color */
+wiki-nav a:last-child {
+  border-bottom: 0;
 }
 
-.content section {
-    margin-bottom: 40px;
+wiki-nav a:hover {
+  text-decoration: none;
+  background: var(--light-gray);
 }
 
-.content h1, .content h2 {
-    border-bottom: 2px solid #444; /* Subtle border for headers */
-   
+wiki-nav a.active {
+  background: var(--light-gray);
+}
+
+wiki-nav .empty {
+  padding: 0.6rem 1rem;
+  color: #667;
+}
+
+.content > :first-child {
+  margin-top: 1rem;
+}
+.content hr {
+  border: 0;
+  border-top: 1px solid #ccd;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 { margin: 1.5rem 0; }
+.content h1 { font-size: 2em; }
+.content h2 { font-size: 1.7em; }
+.content h3 { font-size: 1.4em; }
+.content h4 { font-size: 1.3em; }
+.content h5 { font-size: 1.1em; }
+.content pre {
+  background: var(--light-gray);
+  padding: 1em;
+  overflow: auto;
+}
+.content p,
+.content ul,
+.content ol {
+  line-height: 1.5;
+}
+.content table {
+  margin: 1em 0;
+}
+.content blockquote {
+  border-left: 10px solid var(--light-gray);
+  margin: 1em 0;
+  padding: 1px 1.5em;
+  color: #667;
+}
+
+wiki-page .empty {
+  padding: 20vh 5vw 40vh 0;
+  text-align: center;
+  font-size: 23px;
+  color: #667;
+}
+
+wiki-page .empty button {
+  font-size: 18px;
+}
+
+wiki-page textarea.editor {
+  width: calc(100% - 20px);
+  height: calc(100vh - 130px);
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccd;
+  font-size: 17px;
+  letter-spacing: 0.75px;
+  line-height: 1.4;
+  outline: 0;
+}
