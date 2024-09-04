@@ -54,6 +54,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Infobox Image */
+.infobox-image {
+    width: 100%;
+    max-width: 1200px; /* Ensures the image doesn't exceed 1200px width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space between image and content */
+}
+
 .infobox h2 {
     margin-top: 0;
 }
