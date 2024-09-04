@@ -1,19 +1,48 @@
-<!doctype html>
-<meta charset="utf8">
-<html>
-  <head>
-    <script type="module" src="/theme/theme.js"></script>
-    <link rel="stylesheet" href="/theme/theme.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
     <header>
-      <wiki-header></wiki-header>
+        <h1>Your Website Title</h1>
     </header>
-    <nav>
-      <wiki-nav></wiki-nav>
-    </nav>
-    <main>
-      <wiki-page></wiki-page>
-    </main>
-  </body>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <!-- Navigation Sidebar -->
+        <nav class="sidebar">
+            <ul class="nav-tree">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content Container -->
+        <div class="content">
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>This is content for section 1.</p>
+            </section>
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>This is content for section 2.</p>
+            </section>
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>This is content for section 3.</p>
+            </section>
+            <section id="section4">
+                <h2>Section 4</h2>
+                <p>This is content for section 4.</p>
+            </section>
+        </div>
+    </div>
+</body>
 </html>
