@@ -7,14 +7,14 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Quattrocento", serif;
     line-height: 1.6;
-    background-color: #524b54;
+    background-color: #36393e;
 }
 
 /* Header Styling */
 header {
-    background-color: #ab22c9;
+    background-color: #553c1c;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -33,7 +33,7 @@ header {
 /* Sidebar Navigation */
 .sidebar {
     flex: 1; /* Takes up one part of the flexbox */
-    background-color: #333;
+    background-color: #795629;
     color: white;
     padding: 20px;
 }
@@ -41,6 +41,7 @@ header {
 .sidebar .nav-tree {
     list-style: none; /* Remove default list styling */
     padding: 0;
+    text-align: center;
 }
 
 .sidebar .nav-tree li {
@@ -49,7 +50,6 @@ header {
 
 .sidebar .nav-tree li a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -59,8 +59,14 @@ header {
 
 /* Content Section */
 .content {
-    flex: 3; /* Takes up three parts of the flexbox */
-    padding: 20px;
+    flex: 6; /* Takes up three parts of the flexbox */
+    padding: 25px;
+    background-color:#9e7035
+}
+
+.content p {
+font-style: italic;
+font-weight: 400;
 }
 
 /* Subsection Styling */
