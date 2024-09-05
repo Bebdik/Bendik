@@ -72,3 +72,8 @@ section h2 {
     margin-bottom: 10px;
     color: #4CAF50;
 }
+
+/* Removing Blue link color */
+a {
+    color: inherit;
+  }
