@@ -57,6 +57,12 @@ header {
     color: #4CAF50; /* Hover effect */
 }
 
+.sidebar .nav-tree .h1 {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
 /* Content Section */
 .content {
     flex: 6; /* Takes up three parts of the flexbox */
@@ -76,10 +82,15 @@ section {
 
 section h2 {
     margin-bottom: 10px;
-    color: #4CAF50;
+    
 }
+
 
 /* Removing Blue link color */
 a {
     color: inherit;
   }
+
+a:hover {
+    color: #4CAF50; /* Hover effect */
+}
