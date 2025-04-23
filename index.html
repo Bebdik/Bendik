@@ -2,44 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap'); </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bebdik</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bebdik.com</title>
+    <!-- Google Fonts - Using fonts that give an old manuscript feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>bebdik.com</h1>
-    </header>
+    <div class="parchment-wrapper">
+        <header class="tome-header">
+            <h1>Bebdik.com</h1>
+            <p>Bendik Borge Øttl Homepage</p>
+        </header>
 
-    <!-- Main Content Area -->
-    <div class="main-container">
-        <!-- Navigation Sidebar -->
-        <nav class="sidebar">
-            <ul class="nav-tree">
-                <h1>Sites</h1>
-                <li><a href="worldbuilding">Worldbuilding</a></li>
-                <li><a href="work">Work</a></li>
-                <li><a href="obsidian">Obsidian.md</a></li>
-            </ul>
-        </nav>
+        <main class="tome-content">
+            <div class="book-sections">
+                <section class="book-section">
+                    <h2>Worklife - Career</h2>
+                    <p>A collection of professional endeavors and achievements</p>
+                    <a href="/work" class="ancient-link">Enter the Archives</a>
+                </section>
 
-        <!-- Content Container -->
-        <div class="content">
-            <section id="Worldbuilding">
-                <h2><a href="worldbuilding">Worldbuilding</a></h2>
-                <p>Wiki for Worldbuilding projects</p>
-            </section>
-            <section id="Work">
-                <h2><a href="work">Work</a></h2>
-                <p>Professional life</p>
-            </section>
-            <section id="Obsidian">
-                <h2><a href="obsidian">Obsidian.md</a></h2>
-                <p>Obsidian.md work and projects</p>
-            </section>
-        </div>
+                <section class="book-section">
+                    <h2>The Obsidian Vault</h2>
+                    <p>Obsidian.md showcase and projects</p>
+                    <a href="/obsidian" class="ancient-link">Explore the Vault</a>
+                </section>
+
+                <section class="book-section">
+                    <h2>Worldbuilding Compendium</h2>
+                    <p>Tales and lore of realms of Mysthralis</p>
+                    <a href="/worldbuilding" class="ancient-link">Journey Forth</a>
+                </section>
+            </div>
+        </main>
+
+        <footer class="tome-footer">
+            <div class="footer-ornament">※</div>
+        </footer>
     </div>
 </body>
 </html>
