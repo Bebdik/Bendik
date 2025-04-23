@@ -1,0 +1,218 @@
+:root {
+    --color-parchment: #f4e4bc;
+    --color-parchment-dark: #e8d4a4;
+    --color-ink: #2c1810;
+    --color-ink-faded: #594a42;
+    --color-accent: #8b4513;
+    --color-shadow: rgba(0, 0, 0, 0.2);
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Crimson Text', serif;
+    --sidebar-width: 300px;
+
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background: var(--color-primary-dark);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background: var(--color-accent-light);
+}
+
+.back-button::before {
+    content: "←";
+    font-size: 1.2em;
+}
+
+.current-path {
+    color: var(--color-text-muted);
+}
+
+/* Main Layout */
+.city-layout {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(350px, 1fr);
+    gap: 2rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+
+/* Main Content Area */
+.city-content {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+
+.city-header {
+    background: var(--color-header-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.city-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-accent-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Panel Styling */
+.city-info-panel {
+    background: var(--color-primary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Table-style Info Sections */
+.info-section {
+    margin-bottom: 2rem;
+
+}
+
+.info-section h2 {
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-parchment-dark);
+    color: var(--color-accent-light);
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-primary-dark);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    border-top: #2c1810;
+}
+
+
+
+.info-table th, .info-table td {
+    padding: 0.75rem 1.2rem;
+    text-align: left;
+}
+
+.info-table th {
+    width: 40%;
+    background: var(--color-primary-light);
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+
+/* Tag styling */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: var(--color-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent-light);
+}
+
+/* Content Sections */
+.wiki-article {
+
+    border-radius: 0px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wiki-article h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: var(--color-accent-light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.district-type{
+    font-style: italic;
+}
+
+.district-card .h3{
+    font-size: 1.2rem;
+}
+
+/* City Image */
+.city-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.city-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* Responsive adjustments */
+@media (max-width: 1200px) {
+    .city-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .city-image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .city-info-panel {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .city-content {
+        grid-row: 1;
+    }
+
+
+}
