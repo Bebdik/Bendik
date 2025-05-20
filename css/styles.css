@@ -150,3 +150,42 @@ body {
     color: var(--color-accent);
     margin-bottom: 1rem;
 }
+
+.parchment-image {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 100%;
+  border: 3px solid var(--color-ink-faded);
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--color-shadow);
+}
+
+.parchment-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.parchment-image figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--color-ink-faded);
+  font-size: 0.95rem;
+}
+
+hr {
+  border: none;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  height: 1px;
+  background-color: var(--color-ink-faded);
+  overflow: visible;
+}
+
+
+
