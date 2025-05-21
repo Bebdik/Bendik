@@ -30,15 +30,14 @@ body {
 
 /* Parchment Background */
 .parchment-wrapper {
-    background-color: var(--color-parchment);
-    max-width: 1200px;
-    min-width: 600px;
-    margin: 0 auto;
-    padding: 3rem;
-    border-radius: 8px;
-    box-shadow: 0 0 20px var(--color-shadow),
-                inset 0 0 60px rgba(0, 0, 0, 0.1);
-    position: relative;
+  background-color: var(--color-parchment);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px var(--color-shadow),
+              inset 0 0 60px rgba(0, 0, 0, 0.1);
+  position: relative;
 
 
 
@@ -339,4 +338,57 @@ hr {
 
 .tome-content tr:nth-child(even) td {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .parchment-wrapper {
+    padding: 1.5rem;
+  }
+
+  .tome-header h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .book-section {
+    padding: 1.5rem;
+  }
+
+  .entry-link {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .ancient-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .tome-content table {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .parchment-wrapper {
+    padding: 1rem;
+  }
+
+  .book-section h2,
+  .tome-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .entry-link,
+  .ancient-link {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
 }
