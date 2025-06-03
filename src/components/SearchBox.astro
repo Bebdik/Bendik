@@ -1,0 +1,36 @@
+---
+// SearchBox.astro
+interface Props {
+  placeholder?: string;
+}
+
+const { placeholder = "Search..." } = Astro.props;
+---
+
+<div class="search-box">
+  <input type="text" placeholder={placeholder} id="searchInput" />
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('searchInput');
+    const groups = document.querySelectorAll('.entry-group');
+
+    input.addEventListener('input', () => {
+      const term = input.value.toLowerCase();
+
+      groups.forEach(group => {
+        let groupVisible = false;
+        const entries = group.querySelectorAll('.entry-link');
+
+        entries.forEach(link => {
+          const match = link.textContent.toLowerCase().includes(term);
+          link.parentElement.style.display = match ? '' : 'none';
+          if (match) groupVisible = true;
+        });
+
+        group.style.display = groupVisible ? '' : 'none';
+      });
+    });
+  });
+</script>

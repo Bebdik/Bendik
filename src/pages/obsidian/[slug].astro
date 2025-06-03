@@ -1,0 +1,26 @@
+---
+import { getEntryBySlug, getCollection } from "astro:content";
+import MarkdownLayout from "../../layouts/MarkdownLayout.astro";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("obsidian-meta");
+  return entries.map(entry => ({
+    params: { slug: entry.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug("obsidian-meta", slug);
+
+if (!entry) {
+  throw new Error(`Entry for slug "${slug}" not found in obsidian-meta collection.`);
+}
+
+const { Content } = await entry.render();
+const { data } = entry;
+---
+
+<MarkdownLayout title={data.title} tags={data.tags ?? []}>
+  <Content />
+</MarkdownLayout>

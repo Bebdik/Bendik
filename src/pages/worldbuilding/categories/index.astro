@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+
+const entries = await getCollection('worldbuilding');
+
+const grouped = new Map();
+
+for (const entry of entries) {
+  const category = entry.data.category || 'Uncategorized';
+  if (!grouped.has(category)) {
+    grouped.set(category, []);
+  }
+  grouped.get(category).push(entry);
+}
+---
+
+<WikiLayout title="Worldbuilding Categories" tags={[]}>
+  <section class="entry-listing">
+    {Array.from(grouped.entries()).map(([groupName, groupEntries]) => (
+      <div class="entry-group">
+        <h2 class="category-heading">{groupName}</h2>
+        <hr />
+        <ul class="entry-list">
+          {groupEntries.map((entry) => (
+            <li>
+              <a class="entry-link" href={`/worldbuilding/${entry.slug}`}>
+                {entry.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+</WikiLayout>

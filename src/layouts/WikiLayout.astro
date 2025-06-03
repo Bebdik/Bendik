@@ -1,0 +1,92 @@
+---
+interface Props {
+  title: string;
+  tags?: string[];
+  art?: string;
+  metadata?: Record<string, any>;
+  artGallery?: {
+    title: string;
+    description: string;
+    src: string;
+    alt: string;
+  }[];
+}
+
+const { title, tags = [], art, metadata = {}, artGallery = [] } = Astro.props as Props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="parchment-wrapper wiki-layout">
+      {(art || Object.entries(metadata).length > 0) && (
+        <aside class="wiki-infobox-float">
+          {art && (
+            <figure class="infobox-figure">
+              <img src={art} alt={`Artwork of ${title}`} class="infobox-image" />
+              <figcaption class="infobox-caption">Artwork</figcaption>
+            </figure>
+          )}
+          {Object.entries(metadata).length > 0 && (
+            <table class="infobox-table">
+              {Object.entries(metadata).map(([key, value]) => {
+                if (key === "title" || key === "art" || key === "tags" || key === "artGallery") return null;
+                const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/-/g, " ");
+                return (
+                  <tr>
+                    <td class="meta-key">{label}</td>
+                    <td class="meta-value">{Array.isArray(value) ? value.join(', ') : value}</td>
+                  </tr>
+                );
+              })}
+            </table>
+          )}
+        </aside>
+      )}
+
+      <header class="tome-header">
+        <h1>{title}</h1>
+        {tags.length > 0 && (
+          <div class="wiki-tag-wrapper">
+            {tags.map((tag) => (
+              <a href={`/worldbuilding/tags/${tag.toLowerCase()}`} class="tag-badge">{tag}</a>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <article class="wiki-article">
+        <div class="wiki-content">
+          <slot />
+        </div>
+        {artGallery.length > 0 && (
+          <section class="art-gallery">
+            <h2>Art</h2>
+            <div class="art-row">
+              {artGallery.map((item) => (
+                <div class="art-card">
+                  <strong>{item.title}</strong><br />
+                  {item.description}<br />
+                  <img src={item.src} alt={item.alt} />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+      </article>
+
+      <footer class="tome-footer">
+        <a class="ancient-link" href="javascript:history.back()">← Return to Previous Page</a>
+        <div class="footer-ornament">※</div>
+      </footer>
+    </div>
+  </body>
+</html>

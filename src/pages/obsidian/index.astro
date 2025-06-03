@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../layouts/MarkdownLayout.astro";
+import SearchBox from "../../components/SearchBox.astro";
+
+// Load all entries in the collection
+const entries = await getCollection("obsidian-meta");
+
+// Group entries by category
+const groups = new Map<string, typeof entries>();
+
+for (const entry of entries) {
+  const cat = entry.data.category || "Uncategorized";
+  if (!groups.has(cat)) groups.set(cat, []);
+  groups.get(cat)?.push(entry);
+}
+---
+
+<MarkdownLayout title="The Obsidian Vault" tags={[]}>
+  <p class="tome-header">Writings of thought, rambling and ideas</p>
+  <br />
+  <SearchBox placeholder="Search entries..." />
+
+  <div class="index-content">
+    <section class="entry-listing">
+      {Array.from(groups.entries()).map(([groupName, groupEntries]) => (
+        <div class="entry-group">
+          <h2 class="category-heading">
+            <a class="category-link" href={`/obsidian/categories/${groupName.toLowerCase().replace(/\s+/g, "-")}`}>
+              {groupName}
+            </a>
+          </h2>
+          <ul class="entry-list">
+            {groupEntries.map(entry => (
+              <li>
+                <a class="entry-link" href={`/obsidian/${entry.slug}`}>
+                  {entry.data.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </div>
+</MarkdownLayout>

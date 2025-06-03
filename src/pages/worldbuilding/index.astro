@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import SearchBox from '../../components/SearchBox.astro';
+
+
+// Load all worldbuilding entries
+const entries = await getCollection('worldbuilding');
+
+// Group entries by their first non-empty tag, else 'Uncategorized'
+const grouped = new Map();
+
+for (const entry of entries) {
+  let rawTags = entry.data.tags;
+
+  // Ensure we have an array, filter out empty/whitespace-only strings, and trim
+const category = entry.data.category || 'Uncategorized';
+
+if (!grouped.has(category)) {
+  grouped.set(category, []);
+}
+
+grouped.get(category).push(entry);
+}
+---
+
+<WikiLayout title="Worldbuilding Index" tags={[]}>
+  <p class="tome-header">Overview of my worldbuilding project: Mysthralis</p>
+  <br>
+    <SearchBox placeholder="Search entries..." />
+    
+ <div class="index-content">
+  <section class="entry-listing">
+    {Array.from(grouped.entries()).map(([groupName, groupEntries]) => (
+      <div class="entry-group">
+        <h2 class="category-heading">
+    <a class="category-link" href={`/worldbuilding/categories/${groupName.toLowerCase().replace(/\s+/g, "-")}`}>
+      {groupName}
+   </a>
+        </h2>
+        <ul class="entry-list">
+          {groupEntries.map(entry => (
+            <li>
+              <a class="entry-link" href={`/worldbuilding/${entry.slug}`}>
+                 {entry.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+  </div>
+</WikiLayout>

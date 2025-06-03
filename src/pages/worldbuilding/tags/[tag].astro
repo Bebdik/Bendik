@@ -1,0 +1,41 @@
+---
+// src/pages/worldbuilding/tags/[tag].astro
+import { getCollection } from "astro:content";
+import WikiLayout from "../../../layouts/WikiLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("worldbuilding");
+  const tagSet = new Set<string>();
+
+  for (const entry of entries) {
+    entry.data.tags?.forEach(tag => tagSet.add(tag));
+  }
+
+  return Array.from(tagSet).map(tag => ({
+    params: { tag },
+  }));
+}
+
+const { tag } = Astro.params;
+const entries = await getCollection("worldbuilding");
+const filtered = entries.filter(entry =>
+  entry.data.tags?.map(t => t.toLowerCase()).includes(tag.toLowerCase())
+);
+
+const capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
+const title = `Entries tagged with "${capitalizedTag}"`;
+---
+
+<WikiLayout title={title} tags={[]}>
+  {filtered.length === 0 ? (
+    <p>No entries found for this tag.</p>
+  ) : (
+    <ul class="entry-list">
+      {filtered.map(entry => (
+        <li>
+          <a class="entry-link" href={`/worldbuilding/${entry.slug}`}>{entry.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+</WikiLayout>

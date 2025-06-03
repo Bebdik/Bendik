@@ -1,0 +1,28 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const title = "Bebdik.com";
+const description = "Bendik Borge Øttl Homepage";
+---
+
+<MainLayout {title} {description}>
+  <div class="book-sections">
+    <section class="book-section">
+      <h2>Worklife – Career</h2>
+      <p>(STILL UNDER CONSTRUCTION)</p>
+      <a href="/work" class="ancient-link">Enter the Archives</a>
+    </section>
+
+    <section class="book-section">
+      <h2>The Obsidian Vault</h2>
+      <p>Obsidian.md showcase and projects</p>
+      <a href="/obsidian" class="ancient-link">Explore the Vault</a>
+    </section>
+
+    <section class="book-section">
+      <h2>Worldbuilding Compendium</h2>
+      <p>Tales and lore of Mysthralis</p>
+      <a href="/worldbuilding" class="ancient-link">Journey Forth</a>
+    </section>
+  </div>
+</MainLayout>

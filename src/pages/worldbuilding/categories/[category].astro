@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import WikiLayout from "../../../layouts/WikiLayout.astro";
+
+// Tell Astro which category slugs to build
+export async function getStaticPaths() {
+  const entries = await getCollection("worldbuilding");
+
+  // Collect all unique categories
+  const categories = new Set(
+    entries.map(entry =>
+      (entry.data.category || "Uncategorized").toLowerCase().replace(/\s+/g, "-")
+    )
+  );
+
+  // Return an array of path params
+  return Array.from(categories).map(category => ({
+    params: { category },
+  }));
+}
+
+// Access the category slug from the URL
+const { category } = Astro.params;
+
+// Get all worldbuilding entries
+const allEntries = await getCollection("worldbuilding");
+
+// Filter entries to those in the category
+const filtered = allEntries.filter(entry =>
+  (entry.data.category || "Uncategorized").toLowerCase().replace(/\s+/g, "-") === category
+);
+
+const title = `Entries in "${category.replace(/-/g, ' ')}"`;
+---
+
+
+<WikiLayout title={title} tags={[]}>
+  {filtered.length === 0 ? (
+    <p>No entries found in this category.</p>
+  ) : (
+    <ul class="entry-list">
+      {filtered.map(entry => (
+        <li>
+          <a class="entry-link" href={`/worldbuilding/${entry.slug}`}>
+           {entry.data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</WikiLayout>

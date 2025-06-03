@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../../layouts/MarkdownLayout.astro";
+
+const entries = await getCollection("obsidian-meta");
+
+// Group entries by category
+const categories = new Map<string, CollectionEntry<"obsidian-meta">[]>();
+
+for (const entry of entries) {
+  const cat = entry.data.category || "Uncategorized";
+  if (!categories.has(cat)) {
+    categories.set(cat, []);
+  }
+  categories.get(cat)?.push(entry);
+}
+---
+
+<MarkdownLayout title="Categories" tags={[]}>
+  <ul class="category-list">
+    {Array.from(categories.entries()).map(([category, entries]) => (
+      <li>
+        <a class="entry-link" href={`/obsidian/categories/${category.toLowerCase().replace(/\s+/g, "-")}`}>
+           {category} ({entries.length})
+        </a>
+      </li>
+    ))}
+  </ul>
+</MarkdownLayout>

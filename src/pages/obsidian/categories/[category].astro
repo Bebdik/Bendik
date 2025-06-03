@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../../layouts/MarkdownLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("obsidian-meta");
+
+  const categories = Array.from(
+    new Set(entries.map((entry) => entry.data.category || "Uncategorized"))
+  );
+
+  return categories.map((cat) => ({
+    params: { category: cat.toLowerCase().replace(/\s+/g, "-") },
+    props: { categoryName: cat }
+  }));
+}
+
+const { categoryName } = Astro.props;
+const entries = await getCollection("obsidian-meta");
+
+const filtered = entries.filter(
+  (entry) => (entry.data.category || "Uncategorized") === categoryName
+);
+---
+
+<MarkdownLayout title={`Entries in “${categoryName}”`} tags={[]}>
+  <ul class="entry-list">
+    {filtered.map((entry) => (
+      <li>
+        <a class="entry-link" href={`/obsidian-meta/${entry.slug}`}>
+          {entry.data.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</MarkdownLayout>

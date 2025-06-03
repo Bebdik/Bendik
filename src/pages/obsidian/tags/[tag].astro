@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../../layouts/MarkdownLayout.astro";
+
+// Generate all paths for tag pages
+export async function getStaticPaths() {
+  const entries = await getCollection("obsidian-meta");
+  const tagSet = new Set<string>();
+
+  for (const entry of entries) {
+    const tags = entry.data.tags;
+    if (Array.isArray(tags)) {
+      tags.forEach(tag => tagSet.add(tag.toLowerCase()));
+    }
+  }
+
+  return Array.from(tagSet).map(tag => ({
+    params: { tag }
+  }));
+}
+
+// Get the current tag from the route
+const { tag } = Astro.params;
+const entries = await getCollection("obsidian-meta");
+
+const filtered = entries.filter(entry =>
+  entry.data.tags?.map(t => t.toLowerCase()).includes(tag.toLowerCase())
+);
+
+const title = `Entries tagged with "${tag}"`;
+---
+
+<MarkdownLayout title={title} tags={[]}>
+  {filtered.length === 0 ? (
+    <p>No entries found for this tag.</p>
+  ) : (
+    <ul class="entry-list">
+      {filtered.map(entry => (
+        <li>
+          <a class="entry-link" href={`/obsidian-meta/${entry.slug}`}>{entry.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+</MarkdownLayout>

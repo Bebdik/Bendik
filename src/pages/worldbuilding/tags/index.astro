@@ -1,0 +1,38 @@
+---
+// src/pages/worldbuilding/tags/index.astro
+import { getCollection } from "astro:content";
+import WikiLayout from "../../../layouts/WikiLayout.astro";
+
+const entries = await getCollection("worldbuilding");
+
+// Create a tag-to-count map
+const tagMap = new Map<string, number>();
+
+for (const entry of entries) {
+  const tags = entry.data.tags ?? [];
+  for (const tag of tags) {
+    tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
+  }
+}
+
+// Convert to sorted array
+const tagList = Array.from(tagMap.entries()).sort((a, b) =>
+  a[0].localeCompare(b[0])
+);
+---
+
+<WikiLayout title="Worldbuilding Tags" tags={[]}>
+  <section class="tag-index">
+    {tagList.length === 0 ? (
+      <p>No tags found.</p>
+    ) : (
+      <div class="tag-grid">
+        {tagList.map(([tag, count]) => (
+          <a href={`/worldbuilding/tags/${tag.toLowerCase()}`} class="tag-badge">
+            ✷ {tag} ({count})
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</WikiLayout>
