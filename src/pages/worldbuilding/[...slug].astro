@@ -3,16 +3,19 @@ import { getEntryBySlug, getCollection } from "astro:content";
 import WikiLayout from "../../layouts/WikiLayout.astro";
 import type { CollectionEntry } from "astro:content";
 
+// Static paths
 export async function getStaticPaths() {
   const entries = await getCollection("worldbuilding");
+
   return entries.map(entry => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.slug }, // <-- Use string, not array
   }));
 }
 
-const { slug } = Astro.params;
+// Resolve slug from params
+const slugParam = Astro.params.slug;
+const slug = Array.isArray(slugParam) ? slugParam.join("/") : slugParam;
 const entry = await getEntryBySlug("worldbuilding", slug);
-
 
 if (!entry) {
   throw new Error(`Entry for slug "${slug}" not found in worldbuilding collection.`);

@@ -3,7 +3,7 @@ tags: [location, settlement]
 Location:
   - Firbrook
 Defence: Strong
-art: /images/worldbuilding/settlements/Tun'dyrj.jpg
+art: /images/worldbuilding/locations/Tun'dyrj.jpg
 Settlement Type: Large Town
 Government Type: Democracy
 category: Settlements
