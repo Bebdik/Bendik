@@ -36,8 +36,6 @@ artGallery:
     alt: Tun'dyrj Flag
 ---
 
-
-
 ## Overview
 
 Tun'dyrj is a city carved into the rugged ravines of a once-devastated land, now thriving as a hub of engineering and craftsmanship. Sheltered from harsh snowstorms by its deep ravines, the city is built on rich deposits of precious gems and ores, fueling its renowned metalworks and magical constructs. Tun'dyrj is a place of stark contrasts, where ancient scars of a forgotten battle meet cutting-edge technology, and the industrious spirit of its people drives innovation and prosperity. Amidst its bustling forges and intricate machinery, the city remains haunted by its turbulent history, with legends and mysteries waiting to be uncovered by those daring enough to explore its depths.

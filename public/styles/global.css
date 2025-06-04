@@ -89,6 +89,15 @@ body {
   color: var(--color-parchment);
 }
 
+.book-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+
 /* 🪶 Decorative */
 .book-section {
   background: rgba(248, 236, 212, 1);
@@ -461,7 +470,6 @@ li > a:hover {
 
 .wiki-article {
   position: relative;
-  overflow: hidden;
 }
 
 /* 🖼️ Artwork image inside infobox */
@@ -605,23 +613,73 @@ li > a:hover {
 /* 🌐 Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: flex-start;
   }
   .parchment-wrapper {
-    padding: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
     min-width: auto;
-    margin: 1rem;
+    margin: 0.5rem;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
   }
   .tome-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .tome-header p {
+    font-size: 1rem;
+  }
+  .book-sections {
+    gap: 0.4rem;           /* smaller gap between boxes */
+    padding: 0.2rem 0 0 0; /* minimal top padding, no bottom */
+    flex-shrink: 1;
   }
   .book-section {
-    padding: 1.2rem;
+    padding: 0.5rem 0.3rem;
+    margin: 0;
+    min-height: unset;
+    flex-shrink: 1;
   }
+
   .book-section h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
   }
+  .book-section p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .book-section:last-child {
+    margin-bottom: 0 !important; /* absolutely no gap after last box */
+  }
+  
+  .ancient-link {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .tome-footer {
+    margin-top: 0.2rem;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+  .footer-socials {
+    margin-top: 0.1rem;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+
+  }
+}
+
   .entry-link {
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
