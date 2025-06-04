@@ -9,6 +9,12 @@ This repository contains the source code, history, and deployment configuration 
 Visit the site at:  
 🔗 [https://www.bebdik.com](https://www.bebdik.com)
 
+## 🖼️ Site Previews
+
+### 💻 Desktop View
+
+![Homepage (Desktop)](assets/screenshots/homepage-desktop.png)
+
 ---
 
 ## 🧪 Development
