@@ -615,6 +615,7 @@ li > a:hover {
   body {
     padding: 0.5rem;
     align-items: flex-start;
+    overflow: hidden
   }
   .parchment-wrapper {
     padding: 0.5rem;
