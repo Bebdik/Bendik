@@ -666,16 +666,16 @@ li > a:hover {
   }
   .tome-footer {
     margin-top: 0.2rem;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    margin-bottom: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
   
     font-size: 0.8rem;
     flex-shrink: 0;
   }
   .footer-socials {
     margin-top: 0.1rem;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    margin-bottom: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
 
   }
 }
