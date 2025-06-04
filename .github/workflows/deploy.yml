@@ -62,10 +62,7 @@ jobs:
         run: echo "www.bebdik.com" > ./public/CNAME
 
       - name: Build with Astro
-        run: |
-          ${{ steps.detect-package-manager.outputs.runner }} astro build \
-            --site "${{ steps.pages.outputs.origin }}" \
-            --base "${{ steps.pages.outputs.base_path }}"
+        run: npx astro build
         working-directory: ${{ env.BUILD_PATH }}
 
       - name: Upload GitHub Pages artifact
