@@ -31,6 +31,7 @@ All active development happens in the `astro-dev` branch.
 ## 🛠️ To-Do List
 
 <details> <summary><strong>📂 Site Structure & Content</strong></summary>
+ 
  Create the Work / Portfolio section
 
  Add more content to the Obsidian page
@@ -38,6 +39,7 @@ All active development happens in the `astro-dev` branch.
  Add more content to the Worldbuilding page
 
 </details> <details> <summary><strong>🎨 Design & User Experience</strong></summary>
+ 
  Implement light/dark mode toggle
 
  Clean up design and layout for mobile devices
