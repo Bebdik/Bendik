@@ -618,17 +618,16 @@ li > a:hover {
     overflow: hidden;
   }
   .parchment-wrapper {
-    padding: 0.5rem;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    min-width: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding: 0.5rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: var(--color-parchment);
     margin: 0.5rem;
-    max-height: 100vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 0.5rem;
   }
   .tome-header h1 {
     font-size: 1.5rem;
@@ -669,16 +668,17 @@ li > a:hover {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem !important;
     padding-bottom: 0.2rem !important;
-  
     font-size: 0.8rem;
     flex-shrink: 0;
   }
+
   .footer-socials {
     margin-top: 0.1rem;
     margin-bottom: 0.1rem !important;
     padding-bottom: 0.1rem !important;
 
   }
+  
 }
 
   .entry-link {
@@ -847,3 +847,4 @@ li > a:hover {
     margin-bottom: 0.2rem;
   }
 }
+
