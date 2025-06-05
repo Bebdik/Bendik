@@ -5,7 +5,7 @@ import SearchBox from '../../components/SearchBox.astro';
 
 
 // Load all worldbuilding entries
-const entries = await getCollection('worldbuilding');
+const entries = await getCollection('worldbuilding', ({ data }) => data.publish !== false);
 
 // Group entries by their first non-empty tag, else 'Uncategorized'
 const grouped = new Map();

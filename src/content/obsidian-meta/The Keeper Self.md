@@ -2,6 +2,7 @@
 title: "The Keeper Self"
 tags: [solitude, reverence, guarded]
 category: "The Types"
+publish: false
 ---
 
 # The Keeper Self

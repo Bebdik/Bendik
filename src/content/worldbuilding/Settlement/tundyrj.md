@@ -34,6 +34,8 @@ artGallery:
     description: The flag represents Tun'dyrj's tall mountains and steep ravines
     src: /images/worldbuilding/flags/Tun'dyrj_Flag.png
     alt: Tun'dyrj Flag
+
+publish: false
 ---
 
 ## Overview

@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import MarkdownLayout from "../../layouts/MarkdownLayout.astro";
+
+const entries = await getCollection("work", ({ data }) => data.publish !== false);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Work Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="parchment-wrapper wiki-layout">
+      <header class="tome-header">
+        <h1>Work Index</h1>
+        <p class="tome-header">Welcome to my professional archive. Explore my CV, projects, and more</p>
+      </header>
+
+      <main class="wiki-body">
+        <article class="wiki-content">
+          
+      <ul class="entry-list">
+        {entries.map(entry => (
+          <li>
+            <a class="entry-link" href={`/work/${entry.slug}`}>
+              {entry.data.title}
+            </a>
+        </li>
+        ))}
+      </ul>
+        </article>
+      </main>
+
+      <footer class="tome-footer">
+        <a class="ancient-link" href="/">← Return to Home</a>
+        <div class="footer-ornament">※</div>
+      </footer>
+    </div>
+  </body>
+</html>

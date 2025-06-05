@@ -4,7 +4,7 @@ import MarkdownLayout from "../../layouts/MarkdownLayout.astro";
 import SearchBox from "../../components/SearchBox.astro";
 
 // Load all entries in the collection
-const entries = await getCollection("obsidian-meta");
+const entries = await getCollection("obsidian-meta", ({ data }) => data.publish !== false);
 
 // Group entries by category
 const groups = new Map<string, typeof entries>();

@@ -10,6 +10,7 @@ itemtype: Trinket
 origin: Forged from the light of a dying star
 title: The Luminous Crown
 category: item
+publish: false
 ---
 
 

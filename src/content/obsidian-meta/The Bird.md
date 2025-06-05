@@ -2,6 +2,7 @@
 title: "The Bird"
 tags: [memory, childhood, analysis]
 category: "Memory Analysis"
+publish: false
 ---
 
 One of the most distinct memories from my childhood is a seemingly random one. At this point we were living in a house where a large glass porch door created the entrance. I was never very fond of this door for some reason. I theorize that it is due to how exposed it made the house feel, which is somewhat ironic considering the point I am trying to make later into this rambling. Not to mention the fact that I had managed to get my finger stuck in it as well, but I can not seem to remember if that was prior to or after the story I was thinking about this morning. Either way it does not really matter.
@@ -35,4 +36,3 @@ To me this invisible barrier could be anything. It could be a state of mind, a p
 
 **Note:** *This got slightly more ambigious than I first intended, but I still found it somewhat interesting. I am therefore not gonna rewrite anything and keep it as a raw ramble.*
 
-**TESTING GitHub Actions - AGAIN 2**

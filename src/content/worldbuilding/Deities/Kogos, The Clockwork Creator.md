@@ -18,6 +18,7 @@ mannerisms: Constantly adjusting his form, speaking in measured tones, pauses to
 fears: Chaotic disruptions, Entropy, The failure of the grand design
 category: Deities
 title: Kogos, The Clockwork Creator
+publish: false
 ---
 
 ## Overview

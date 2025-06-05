@@ -2,6 +2,7 @@
 title: "The Architect Self"
 tags: [vision, long-building, potential]
 category: "The Types"
+publish: false
 ---
 
 # The Architect Self

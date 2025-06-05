@@ -1,0 +1,28 @@
+---
+import { getEntryBySlug, getCollection } from "astro:content";
+import WikiLayout from "../../layouts/WikiLayout.astro";
+
+// Static paths
+export async function getStaticPaths() {
+  const entries = await getCollection("work", ({ data }) => data.publish !== false);
+  return entries.map(entry => ({
+    params: { slug: entry.slug },
+  }));
+}
+
+// Resolve slug from params
+const slugParam = Astro.params.slug;
+const slug = Array.isArray(slugParam) ? slugParam.join("/") : slugParam;
+const entry = await getEntryBySlug("work", slug);
+
+if (!entry) {
+  throw new Error(`Entry for slug "${slug}" not found in work collection.`);
+}
+
+const { Content } = await entry.render();
+const { data } = entry;
+---
+
+<WikiLayout title={data.title} tags={data.tags ?? []} art={data.art} metadata={data}>
+  <Content />
+</WikiLayout>

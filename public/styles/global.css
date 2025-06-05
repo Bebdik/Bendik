@@ -81,8 +81,11 @@ body {
 }
 
 .wikilink:hover { 
-  color: var(--color-parchment);
-  background: var(--color-accent);
+  color: var(--color-ink-faded);
+}
+
+.wikilink::before {
+  content: "❧ ";
 }
 
 .ancient-link {
@@ -386,13 +389,14 @@ body {
 }
 
 /* Miscellaneous */
-hr {
+ hr {
   margin-bottom: 1rem;
   border: 0;
   height: 1px;
   background: #8b5e3c;
   margin-top: 1rem;
 }
+
 
 h2 {
   margin-top: 2rem;
