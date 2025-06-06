@@ -17,7 +17,17 @@ export default defineConfig({
     remarkPlugins: [
       [remarkWikiLink, {
         aliasDivider: '|', // <--- Add this line!
-        hrefTemplate: (permalink) => `/worldbuilding/${slugify(permalink)}`,
+        hrefTemplate: (permalink) => {
+      const lower = permalink.toLowerCase();
+      if (lower.startsWith('obsidian/')) {
+        return `/${slugify(permalink)}`;
+      }
+      if (lower.startsWith('work/')) {
+        return `/${slugify(permalink)}`;
+      }
+      // Default to worldbuilding
+      return `/worldbuilding/${slugify(permalink)}`;
+    },
         pageResolver: (name) => [slugify(name)],
         wikiLinkResolver: (permalink) => slugify(permalink),
         wikiLinkClassName: 'wikilink', 

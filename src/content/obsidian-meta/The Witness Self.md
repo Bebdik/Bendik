@@ -5,8 +5,6 @@ category: "The Types"
 publish: false
 ---
 
-# The Witness Self
-
 >*Reflective + Intuitive*
 
 The Witness does not build, intervene, or advise. It observes. This is the Self that listens to the inner world without immediately trying to shape it. It does not seek coherence through structure, but through presence. It is an intuitive attentiveness that favors resonance over explanation. The Witness pays attention to what emerges when nothing is forced.

@@ -5,13 +5,11 @@ category: "The Types"
 publish: false
 ---
 
-# The Liminal Fool Self
-
 >*Expressive + Intuitive*
 
 The Fool does not explain itself. It has no need to. This is the Self that resists framing, not out of ignorance, but on principle. It refuses to be fixed, defined, or positioned in any single role for too long. Its natural state is movement, and it operates by sidestepping the expectation of sense. It expresses for the sake of release, interruption, inversion. If something feels stuck or too coherent, the Fool will break it.
 
-Where [The Cartographer Self](/obsidian/the-cartographer-self) speaks clearly, the Fool mumbles riddles. Where [The Architect Self](/obsidian/the-architect-self) designs carefully, the Fool improvises recklessly. It is not driven by logic or even clarity, but by rhythm, energy, and the immediate pleasure of play. Often, its actions are nonsensical on the surface, but with a kind of strange internal integrity. The joke may be absurd, but it’s saying something real. The performance may be ridiculous, but it frees something that couldn't be spoken directly.
+Where [[obsidian/The Cartographer Self|The Cartographer Self]] speaks clearly, the Fool mumbles riddles. Where [[obsidian/The Architect Self|The Architect Self]] designs carefully, the Fool improvises recklessly. It is not driven by logic or even clarity, but by rhythm, energy, and the immediate pleasure of play. Often, its actions are nonsensical on the surface, but with a kind of strange internal integrity. The joke may be absurd, but it’s saying something real. The performance may be ridiculous, but it frees something that couldn't be spoken directly.
 
 The Fool is not indifferent to meaning, it’s just unwilling to obey it. It enjoys contradiction and playing devil's advocate. It is a shapeshifter that uses humor, chaos, and theatricality to slip past internal censors. When all other Selves are bound in caution, the Fool disrupts. It knows the rules only to ignore them. Its very presence is a critique of seriousness as default.
 

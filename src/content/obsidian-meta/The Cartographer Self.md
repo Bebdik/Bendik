@@ -5,8 +5,6 @@ category: "The Types"
 publish: false
 ---
 
-# The Cartographer Self
-
 >*Expressive + Structured*
 
 The Cartographer is concerned with making inner order visible. It does not merely experience, it instead renders. This Self thrives on articulation, and tends to emerge when there is something complex or unformed that needs to be mapped, named, or communicated. Unlike [[The Architect Self]], who may build in solitude indefinitely, the Cartographer wants to create something legible, not necessarily to everyone, but to *someone*, even if that someone is the future self.

@@ -5,8 +5,6 @@ category: "The Types"
 publish: false
 ---
 
-# The Architect Self
-
 >*Reflective + Structured*
 
 The Architect is the inner builder, the one who concerns itself not with appearances, but with foundations. It turns inward not to retreat, but to assemble. Its work is quiet, methodical, and deeply conceptual. Ideas are not fleeting here; they are drafted, refined, and aligned within a system of personal coherence. Whether it expresses itself outwardly or not is secondary, what matters is the internal sense that something holds together.

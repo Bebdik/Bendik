@@ -5,8 +5,6 @@ category: "The Types"
 publish: false
 ---
 
-# The Keeper Self
-
 >*Central / Central*
 
 The Keeper does not sit cleanly within the quadrants. It lives at the center—where inwardness and outwardness meet, where logic softens into intuition, and intuition sharpens into form. It is not a balance, exactly. It is a **holding**.
