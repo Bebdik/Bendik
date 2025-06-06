@@ -36,7 +36,7 @@ artGallery:
     src: /images/worldbuilding/flags/Tun'dyrj_Flag.png
     alt: Tun'dyrj Flag
 
-publish: false
+publish: true
 ---
 
 ## Overview
@@ -45,7 +45,7 @@ Tun'dyrj is a city carved into the rugged ravines of a once-devastated land, now
 
 ## Current Events
 
-Tun'dyrj is a city bustling with life.
+Tun'dyrj is a city bustling with life [FINISH writing this]
 
 ## Geography 
 

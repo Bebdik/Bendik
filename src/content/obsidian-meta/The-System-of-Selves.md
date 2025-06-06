@@ -2,7 +2,7 @@
 title: "The System of Selves"
 tags: [the-selves, self-map, archetype-system]
 category: "The System"
-publish: false
+publish: true
 ---
 
 
@@ -39,7 +39,7 @@ This axis describes where the Self's energy is *directed*, toward the inner worl
 
 ###  Reflective
 
-- **Attention inward**: memory, sensation, intuition, truth [[the witness self]] 
+- **Attention inward**: memory, sensation, intuition, truth 
 
 - Asks: *“What is true within me?”*
 
