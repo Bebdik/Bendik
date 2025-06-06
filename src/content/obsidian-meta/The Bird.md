@@ -5,10 +5,10 @@ category: "Memory Analysis"
 publish: true
 ---
 
-One of the most distinct memories from my childhood is a unexpectedly vivid one. I spent my early school years in a house where a large glass porch door created the entrance. I was never very fond of this door for some reason. I think that it is due to how exposed it made the house feel, which is somewhat ironic considering the point I am trying to make later into this rambling. Not to mention the fact that I had managed to get my finger stuck in it as well, but I can not seem to remember if that was prior to or after the story I was thinking about this morning. Either way it does not really matter.
+One of the most distinct memories from my childhood is an unexpectedly vivid one. I spent my early school years in a house where a large glass door served as the entrance. I was never very fond of this door for some reason. I think that it is due to how exposed it made the house feel, which is somewhat ironic considering the point I am trying to make. I also once managed to get my finger stuck in it I can't remember if it happened before or after the story I am writing about today. Either way, it doesn’t really matter.
 <br>
 <br>
-I will try not to steer off course too much here. I find that with old memories there's always more context, and it can be hard to limit what is relevant or not. It might be due to hazy memory, or the ambiguity of how a memory is perceived. It is to me a fleeting feeling, one that belongs to you, but that still feels like it is slightly outside of my grasp at the same time.
+I will try not to steer too far off course. I find that with old memories there's always more context, and it can be hard to limit what is actually relevant. It might be due to hazy memory, or the ambiguity of how a memory is perceived. To me, memory is a fleeting feeling, something that belongs to me, but always seems just out of reach.
 <br>
 <br>
 Either way, this morning on the way to work, a bird flew so close to the car it felt like it was mere centimeters away from being struck. I have of course seen similar behavior before, like they are pushing the limits a bit, almost testing fate. As you have probably already realized, this event reminded me of something also related to a bird. If you are extra attentive you might also understand where I am going considering how I mentioned this large glass door at the beginning. Moving forward, I will now try to paint a picture of what happened. 
