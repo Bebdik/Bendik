@@ -45,7 +45,7 @@ const { title, tags = [], art, metadata = {}, artGallery = [] } = Astro.props as
           {Object.entries(metadata).length > 0 && (
             <table class="infobox-table">
               {Object.entries(metadata).map(([key, value]) => {
-                if (key === "title" || key === "art" || key === "tags" || key === "publish" || key === "artGallery") return null;
+                if (key === "title" || key === "art" || key === "tags" || key === "caption"  || key === "publish" || key === "artGallery") return null;
                 const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/-/g, " ");
                 return (
                   <tr>
