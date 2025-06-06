@@ -26,7 +26,7 @@ const work = defineCollection({
     art: z.string().optional(),
     metadata: z.record(z.any()).optional(),
     tags: z.array(z.string()).optional(),
-  }),
+  }).passthrough(), 
 });
 
 // Export all collections

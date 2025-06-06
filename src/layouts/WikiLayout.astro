@@ -29,16 +29,23 @@ const { title, tags = [], art, metadata = {}, artGallery = [] } = Astro.props as
     <div class="parchment-wrapper wiki-layout">
       {(art || Object.entries(metadata).length > 0) && (
         <aside class="wiki-infobox-float">
+          {metadata.title && (
+            <div class="tome-header-wiki">
+              <h2>{metadata.title}</h2>
+            </div>
+          )}
           {art && (
             <figure class="infobox-figure">
               <img src={art} alt={`Artwork of ${title}`} class="infobox-image" />
-              <figcaption class="infobox-caption">Artwork</figcaption>
+              {metadata.caption && (
+              <figcaption class="infobox-caption">{metadata.caption}</figcaption>
+              )}
             </figure>
           )}
           {Object.entries(metadata).length > 0 && (
             <table class="infobox-table">
               {Object.entries(metadata).map(([key, value]) => {
-                if (key === "title" || key === "art" || key === "tags" || key === "artGallery") return null;
+                if (key === "title" || key === "art" || key === "tags" || key === "publish" || key === "artGallery") return null;
                 const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/-/g, " ");
                 return (
                   <tr>

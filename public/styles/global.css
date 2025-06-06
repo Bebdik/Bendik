@@ -61,6 +61,14 @@ body {
   text-shadow: 2px 2px 4px var(--color-shadow);
 }
 
+.tome-header-wiki{
+  text-align: center;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 4px var(--color-shadow);
+  color: var(--color-ink);
+  margin-bottom: 0.75rem;
+}
+
 .footer-ornament {
   font-size: 2rem;
   color: var(--color-ink-faded);
@@ -394,7 +402,7 @@ body {
   border: 0;
   height: 1px;
   background: #8b5e3c;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 

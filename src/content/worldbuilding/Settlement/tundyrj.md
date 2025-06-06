@@ -1,5 +1,6 @@
 ---
 tags: [location, settlement]
+caption: Artwork of Tun'dyrj
 Location:
   - Firbrook
 Defence: Strong
@@ -35,7 +36,7 @@ artGallery:
     src: /images/worldbuilding/flags/Tun'dyrj_Flag.png
     alt: Tun'dyrj Flag
 
-publish: false
+publish: true
 ---
 
 ## Overview

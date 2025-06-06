@@ -1,24 +1,26 @@
 ---
 title: "Curriculum Vitae"
-layout: ../../layouts/WikiLayout.astro
-art: /images/profile.jpg  # Replace with actual path
+art: \images\work\cv\Bendik.jpg
+caption: Bendik Borge Øttl
 tags: [CV, Profile, Work]
 name: Bendik Borge Øttl
 location: Larvik, Norway
 email: bendikoettl@gmail.com
 phone: Available upon request
-website: https://bebdik.com
 languages: [English (Fluent), Norwegian (Native), German (Limited)]
+education level: Bachelor
 publish: true
 ---
 
 ## Executive Summary
 
-An adaptable and curious IT professional with a strong background in both systems development and creative problem solving. Passionate about digital design, structured knowledge, and efficient workflows. Experienced in both solo projects and collaborative environments with high demands for precision, performance, and aesthetic integrity.
+An adaptable and curious IT professional with a background in creative problem solving. Passionate about digital design, structured knowledge, and efficient workflows. Experienced in both solo projects and collaborative environments with high demands for precision, performance, and integrity.
 
 ---
 
 ## Working Experience
+
+<br>
 
 ### IT Support Consultant — Jotron AS *(2022–Present)*
 
@@ -32,9 +34,11 @@ An adaptable and curious IT professional with a strong background in both system
 
 - Administered Microsoft Cloud services as a Global Administrator, with hands-on work in Entra, Intune, Autopilot, Exchange, Teams, and SharePoint.
 
+<br>
 
 ### Waiter/Bartender — Vertshuset SydVesten *(2015–2020)*
-- Took orders, serving food & drinks.
+
+- Took orders, served food & drinks.
 
 - Built and maintaned restaurant homepage.
 
@@ -50,12 +54,12 @@ Graduated with grade A on bachelor thesis, available [here](https://github.com/l
 ---
 ## Skills / Software
 
-- Duo Security: Identity Security, MFA & SSO
-- Microsoft Cloud Apps
-- ADUC
-- IFS (ERP)
-- Licensing 
-- Powershell
+- User and Identity Management (Active Directory, Entra ID / Azure AD)
+- Microsoft 365 Administration (Exchange Online, SharePoint, Teams)
+- Technical Documentation (SOPs, internal wikis, personal documentation)
+- Helpdesk / End-User Support
+- Asset Management
+- Training & Onboarding
 
 ---
 ## Projects
@@ -74,10 +78,11 @@ Graduated with grade A on bachelor thesis, available [here](https://github.com/l
 
 ## Interests
 
-- TTRPG worldbuilding and game mastering
-- Typographic design and old maps
-- Symbol systems and structured creativity
-- Scandinavian music and cultural history
+- Worldbuilding
+- Personal Knowledge Management
+- Music
+- History
+- Technology
 
 ---
 
