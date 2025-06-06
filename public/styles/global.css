@@ -282,7 +282,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  list-style: none;
+  list-style: disc;
   padding: 0;
   margin-top: 1rem;
 }
@@ -310,7 +310,7 @@ body {
 
 .category-list {
   padding-left: 0;
-  list-style: none;
+  list-style: disc;
   display: grid;
   gap: 0.5rem;
 }
@@ -703,7 +703,27 @@ li > a:hover {
     padding-bottom: 0.1rem !important;
 
   }
+
+  .wiki-content {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .wiki-content ul {
+    list-style-type: none;
+    list-style-position: inside !important;
+  }
   
+  .wiki-content li {
+   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-ink-faded);
+  color: var(--color-ink);
+  border-radius: 6px;
+  margin: 0.25em 0.5em 0.25em 0;
+  padding: 0.3em 1em;
+  }
+
 }
 
   .entry-link {
@@ -727,7 +747,7 @@ li > a:hover {
   }
   .entry-list {
     flex-direction: column;
-    list-style: none;
+    list-style: disc;
     padding: 0;
     margin-top: 1rem;
   }
