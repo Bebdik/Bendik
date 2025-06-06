@@ -48,7 +48,7 @@ An adaptable and curious IT professional with a background in creative problem s
 ## Education
 
 **B.Sc. in IT and Information Systems** — USN *(2019–2022)*  
-Graduated with grade A on bachelor thesis, available [here](https://github.com/leandergangso/Havnly-USN?tab=readme-ov-file#group-members) 
+Graduated with grade **A** on bachelor thesis, available [here](https://github.com/leandergangso/Havnly-USN?tab=readme-ov-file#group-members) 
 
 ---
 ## Skills / Software
