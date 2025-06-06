@@ -1,5 +1,6 @@
 ---
 title: The Art of Quitting
+tags: [writing-prompt, analysis, quitting]
 category: Writing Prompt Answers
 published: true
 ---
@@ -18,7 +19,7 @@ What is considered *"quitting"* is subjective. In my experience the word is ofte
 Of course quitting does not always mean failure. Knowing when to stop is an important skill. Perseverance is considered a great virtue, and for good reason. That said, there might be a point where it's too much. To simplify it with a slightly silly metaphor: 
 
 
-*A wizard can heal 10 people a day—just within his limits. One day, he pushes himself to heal 20. The strain proves too much; he falls ill and can no longer heal anyone. In trying to help more, he ends up helping none.*
+*A wizard can heal 10 people a day, just within his limits. One day, he pushes himself to heal 20. The strain proves too much; he falls ill and can no longer heal anyone. In trying to help more, he ends up helping none.*
 
 <br>
 
