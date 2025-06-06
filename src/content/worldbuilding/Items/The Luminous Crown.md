@@ -1,16 +1,16 @@
 ---
 tags: [item]
 
-art: \images\worldbuilding\items\The Luminous Crown.jpg
-aliases: 
-pronounced: 
-previousholder: 
-currentholder: "[[Astrala, The Star-Mother]]"
-itemtype: Trinket
+art: \images\worldbuilding\items\The Luminous Crown.jpg 
+caption: Artwork
+previous holder:
+Current Holder: Astrala, The Star-Mother
+Item Type: Trinket
 origin: Forged from the light of a dying star
 title: The Luminous Crown
 category: item
 publish: false
+test:
 ---
 
 

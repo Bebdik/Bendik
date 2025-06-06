@@ -3,7 +3,6 @@ title: "Curriculum Vitae"
 art: \images\work\cv\Bendik.jpg
 caption: Bendik Borge Øttl
 tags: [CV, Profile, Work]
-name: Bendik Borge Øttl
 location: Larvik, Norway
 email: bendikoettl@gmail.com
 phone: Available upon request

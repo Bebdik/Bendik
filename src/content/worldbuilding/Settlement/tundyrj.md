@@ -36,7 +36,7 @@ artGallery:
     src: /images/worldbuilding/flags/Tun'dyrj_Flag.png
     alt: Tun'dyrj Flag
 
-publish: true
+publish: false
 ---
 
 ## Overview

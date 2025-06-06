@@ -1,16 +1,14 @@
 ---
 tags: [character, deity, npc]
 art: /images/worldbuilding/deities/Astrala.jpg
+caption: Artwork
 role: "Deity"
 pronouns: She/Her
 alignment: Neutral Good
-ideals: Hope, Guidance, Compassion, Unity
-flaws: Overprotective, Hesitant to act decisively, Reluctant to embrace conflict
-mannerisms: Gently caresses the air as if touching the stars, speaks in a soothing and melodic tone, pauses to listen to the "music" of the cosmos before responding
-fears: The extinguishing of stars, The loss of hope, Falling into despair
+
 occupation:
   - Astrologer
-deitypower: Greater God
+Deity Power: Greater God
 condition: Healthy
 aliases:
   - The Star-Mother
@@ -22,6 +20,13 @@ publish: false
 ## Overview
 
 Astrala is the benevolent goddess of stars, dreams, and celestial guidance. She embodies the light that illuminates the night sky, offering hope, inspiration, and direction to all who seek it. Her presence is felt in the quiet moments under a starlit sky, where dreams are born and destinies are shaped. Worshipped by stargazers, poets, and those who look to the heavens for guidance, Astrala is seen as a nurturing and protective figure, ensuring that even in the darkest times, the stars will always shine to lead the way. 
+
+<br>
+
+- **Ideals:** Hope, Guidance, Compassion, Unity
+- **Flaws:** Overprotective, Hesitant to act decisively, Reluctant to embrace conflict
+- **Mannerisms:** Gently caresses the air as if touching the stars, speaks in a soothing and melodic tone, pauses to listen to the "music" of the cosmos before - responding
+- **Fears:** The extinguishing of stars, The loss of hope, Falling into despair
 
 <br>
 
@@ -75,27 +80,27 @@ Astrala is worshipped by those who seek guidance, hope, and inspiration. Sailors
 
 ## Acquaintances
 
-**Friendships:**
+### **Friendships:**
 
-- **[[|Kogos, The Clockwork Creator]]:** Astrala and Kogos share a profound and intricate friendship, built on mutual respect and a shared commitment to maintaining the cosmos. Their relationship is one of harmony and cooperation, with each deity recognizing the value of the other's contributions to the universe. While their differing approaches to order and meaning occasionally lead to philosophical differences, these only serve to deepen their understanding of each other. Together, they represent the union of form and purpose, structure and light, working in tandem to ensure that the universe not only functions perfectly but also inspires and guides those who inhabit it.
+- **[[Deities/Kogos, The Clockwork Creator|Kogos, The Clockwork Creator]]:** Astrala and Kogos share a profound and intricate friendship, built on mutual respect and a shared commitment to maintaining the cosmos. Their relationship is one of harmony and cooperation, with each deity recognizing the value of the other's contributions to the universe. While their differing approaches to order and meaning occasionally lead to philosophical differences, these only serve to deepen their understanding of each other. Together, they represent the union of form and purpose, structure and light, working in tandem to ensure that the universe not only functions perfectly but also inspires and guides those who inhabit it.
 
 - **Sylvara, the Wildheart:** Astrala and Sylvara share a deep and nurturing friendship. Sylvara sees Astrala's light as essential for the growth and health of the natural world, with the stars guiding the cycles of nature. Astrala, in turn, admires Sylvara's stewardship of life on the material plane. Their relationship is one of mutual support, with Sylvara’s natural world thriving under the light of Astrala’s stars. They often collaborate to protect the balance of life and ensure the harmony between the natural and celestial realms.
 
 - **Zyphira, the Windweaver:** Astrala’s relationship with Zyphira is a dynamic and complementary friendship. While Zyphira embodies the wild and unpredictable forces of the storm, Astrala provides the constant light that navigators and travelers rely on amid the chaos. They have a mutual understanding, with Astrala appreciating the necessity of change and Zyphira valuing the guidance that the stars provide even during the most tumultuous times. Their followers often find themselves cooperating in efforts to respect the balance between stability and change.
     
 
-**Rivalries:**
+### Rivalries:
 
 - **Luminaris, the Enlightened:** While Astrala and Luminaris both value knowledge and guidance, their differing methods create a subtle rivalry. Luminaris believes in knowledge through study and intellect, while Astrala values wisdom gained through dreams, inspiration, and celestial signs. This difference in approach sometimes leads to tension between their followers—Luminaris' devotees may view Astrala’s as overly reliant on mysticism, while Astrala’s followers might see Luminaris’ as too rigid and dismissive of the intangible. Their rivalry is not hostile but marked by a respectful debate over the true source of enlightenment.
 
 - **Gryndora, the Forge Mother:** Astrala and Gryndora have a complex rivalry rooted in their contrasting visions of creation. Gryndora’s focus on forging and crafting tangible objects can sometimes conflict with Astrala’s emphasis on the ethereal and the spiritual. While Gryndora values durability and practicality, Astrala values inspiration and the beauty of the intangible. Their followers often debate the merits of practical invention versus the pursuit of artistic or spiritual ideals, with Astrala’s being more abstract and visionary, and Gryndora’s more grounded and pragmatic.
     
 
-**Adversaries:**
+### Adversaries:
 
 - **Noxiris, the Entropic Void:** Astrala stands in staunch opposition to Noxiris, viewing him as the ultimate threat to her light and the hope it represents. While Kogos battles Noxiris on the front of cosmic order, Astrala fights against the despair and darkness that Noxiris seeks to spread. She is determined to protect the stars from being extinguished and to keep hope alive in the hearts of mortals. Her followers see themselves as guardians of the light, constantly working to fend off the encroaching void that Noxiris represents.
 
-- **Riven, the Trickster:** Riven's love for chaos and deception makes him a natural adversary to Astrala. Where Astrala seeks to guide and inspire with clarity and truth, Riven revels in confusion and misdirection. His attempts to obscure the light of the stars with illusions are viewed by Astrala as a direct assault on her purpose. This adversarial relationship is marked by constant conflict, with Astrala’s followers working tirelessly to dispel Riven’s illusions and restore the true light of the stars.
+- Riven, the Trickster: Riven's love for chaos and deception makes him a natural adversary to Astrala. Where Astrala seeks to guide and inspire with clarity and truth, Riven revels in confusion and misdirection. His attempts to obscure the light of the stars with illusions are viewed by Astrala as a direct assault on her purpose. This adversarial relationship is marked by constant conflict, with Astrala’s followers working tirelessly to dispel Riven’s illusions and restore the true light of the stars.
 
 ## Current Events
 

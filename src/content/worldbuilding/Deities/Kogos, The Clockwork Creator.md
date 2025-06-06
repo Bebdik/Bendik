@@ -1,6 +1,7 @@
 ---
 tags: [character, deity, npc]
 art: /images/worldbuilding/deities/Kogos.jpg
+caption: Artwork
 role: Deity
 pronouns: He/Him
 alignment: Lawful Neutral
@@ -12,10 +13,7 @@ organization:
 condition: Healthy
 party1relation: Unmet
 symbol: Cogwheel with Eye
-ideals: Precision, Innovation, Order, Knowledge
-flaws: Overly analytical, Inflexible, Dismissive of emotions
-mannerisms: Constantly adjusting his form, speaking in measured tones, pauses to "calculate" before responding
-fears: Chaotic disruptions, Entropy, The failure of the grand design
+
 category: Deities
 title: Kogos, The Clockwork Creator
 publish: false
@@ -24,6 +22,13 @@ publish: false
 ## Overview
 
 Kogos is a deity who represents the potential for order within chaos, the spark of innovation within the mundane, and the ceaseless march of progress. His influence is felt in every finely crafted tool, every well-oiled machine, and every grand invention that advances civilization. While Kogos is revered in [[Tun'dyrj]], his principles resonate with any who value the power of knowledge and the beauty of function. His followers often find themselves at the forefront of technological advancement, bringing the light of Kogos into every corner of the world where mechanisms and engineering can thrive.
+
+<br>
+
+- **Ideals**: Precision, Innovation, Order, Knowledge
+- **Flaws**: Overly analytical, Inflexible, Dismissive of emotions
+- **Mannerisms**: Constantly adjusting his form, speaking in measured tones, pauses to "calculate" before responding
+- **Fears**: Chaotic disruptions, Entropy, The failure of the grand design
 
 <br>
 
@@ -79,7 +84,7 @@ The [[Campaign/Organizations/Guild of Gears|Guild of Gears]], a prestigious asse
 
 ## Acquaintances
 
-**Friendships:**
+### Friendships:
 
 - **[[Deities/Astrala, The Star-Mother|Astrala, The Star-Mother]]:** Astrala and Kogos share a profound and intricate friendship, built on mutual respect and a shared commitment to maintaining the cosmos. Their relationship is one of harmony and cooperation, with each deity recognizing the value of the other's contributions to the universe. While their differing approaches to order and meaning occasionally lead to philosophical differences, these only serve to deepen their understanding of each other. Together, they represent the union of form and purpose, structure and light, working in tandem to ensure that the universe not only functions perfectly but also inspires and guides those who inhabit it.
 
@@ -88,14 +93,14 @@ The [[Campaign/Organizations/Guild of Gears|Guild of Gears]], a prestigious asse
 - **Luminaris, the Enlightened:** The god of knowledge and scholars, Luminaris, often works alongside Kogos. They share a deep passion for discovery and understanding, and their followers frequently exchange ideas, texts, and innovations. Luminaris provides the theoretical knowledge that Kogos’ followers turn into practical applications.
     
 
-**Rivalries:**
+### Rivalries:
 
 - **Zyphira, the Windweaver:** The goddess of chaos, storms, and unpredictability, Zyphira represents everything that Kogos seeks to control and minimize. While not outright enemies, their philosophies clash—Zyphira's love for spontaneity and wild nature is an affront to Kogos' ideals of order and precision. Their followers often find themselves at odds, particularly in places where nature and technology meet.
 
 - **Sylvara, the Wildheart:** The goddess of nature, growth, and the untamed wilderness, Sylvara and Kogos have a tense relationship. Kogos sees nature as something to be understood, controlled, and improved upon, while Sylvara views his attempts as a violation of the natural order. Their followers often disagree on matters of industrialization and the expansion of civilization into natural areas.
     
 
-**Adversaries:**
+### Adversaries:
 
 - **Noxiris, the Entropic Void:** The god of decay, entropy, and the inevitable end of all things, Noxiris is Kogos’ greatest adversary. Where Kogos seeks to maintain and perfect, Noxiris embodies the inevitable breakdown of all structures. Their battles are cosmic and metaphorical, representing the eternal struggle between creation and destruction. Kogos views Noxiris as a fundamental threat to his Grand Design, and their followers often engage in bitter conflicts.
 
