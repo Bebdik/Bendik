@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import MarkdownLayout from "../../../layouts/MarkdownLayout.astro";
+import IndexLayout from "../../../layouts/IndexLayout.astro";
 
 const entries = await getCollection("obsidian-meta");
 
@@ -16,7 +16,7 @@ for (const entry of entries) {
 }
 ---
 
-<MarkdownLayout title="Categories" tags={[]}>
+<IndexLayout title="Categories" tags={[]}>
   <ul class="category-list">
     {Array.from(categories.entries()).map(([category, entries]) => (
       <li>
@@ -26,4 +26,4 @@ for (const entry of entries) {
       </li>
     ))}
   </ul>
-</MarkdownLayout>
+</IndexLayout>

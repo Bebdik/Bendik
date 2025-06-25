@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import MarkdownLayout from "../../../layouts/MarkdownLayout.astro";
+import IndexLayout from '../../../layouts/IndexLayout.astro';
 
 // Generate all paths for tag pages
 export async function getStaticPaths() {
@@ -30,7 +30,7 @@ const filtered = entries.filter(entry =>
 const title = `Entries tagged with "${tag}"`;
 ---
 
-<MarkdownLayout title={title} tags={[]}>
+<IndexLayout title={title} tags={[]}>
   {filtered.length === 0 ? (
     <p>No entries found for this tag.</p>
   ) : (
@@ -42,4 +42,4 @@ const title = `Entries tagged with "${tag}"`;
       ))}
     </ul>
   )}
-</MarkdownLayout>
+</IndexLayout>

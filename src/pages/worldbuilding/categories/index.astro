@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import WikiLayout from '../../../layouts/WikiLayout.astro';
+import IndexLayout from '../../../layouts/IndexLayout.astro';
 
 const entries = await getCollection('worldbuilding');
 
@@ -15,7 +15,7 @@ for (const entry of entries) {
 }
 ---
 
-<WikiLayout title="Worldbuilding Categories" tags={[]}>
+<IndexLayout title="Worldbuilding Categories" tags={[]}>
   <section class="entry-listing">
     {Array.from(grouped.entries()).map(([groupName, groupEntries]) => (
       <div class="entry-group">
@@ -33,4 +33,4 @@ for (const entry of entries) {
       </div>
     ))}
   </section>
-</WikiLayout>
+</IndexLayout>

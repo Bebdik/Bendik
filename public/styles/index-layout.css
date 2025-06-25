@@ -1,0 +1,110 @@
+/* Entry list tweaks for index pages */
+.entry-list,
+.entry-listing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.entry-list li,
+.entry-listing li {
+  margin-bottom: 1rem;
+}
+
+.entry-link {
+  /* Optional: slightly larger, more visible links */
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/* Category/Tag headings */
+.category-heading,
+.tag-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  color: #2c1810;
+  text-shadow: 1px 1px 2px #e6d4b3;
+}
+
+/* Sticky footer for return button */
+.tome-footer {
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(to top, #f4e4bc 90%, transparent);
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+/* Ensure entry-list is vertical and fills width on index pages */
+.index-content .entry-list {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.index-content .entry-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+}
+
+/* Override global-old.css flex for entry-list on index pages */
+.entry-list {
+  display: block !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  text-align: center; /* Center the links inside */
+}
+
+.entry-list li {
+  display: block !important;
+  width: 100% !important;
+  margin: 0.5rem 0 !important;
+  padding-left: 0 !important;
+}
+
+.entry-link {
+  display: inline-block !important;
+  margin: 0 auto !important;
+  /* Optionally add more styling here */
+}
+
+.category-heading {
+  text-align: center !important;
+  width: 100%;
+}
+
+.entry-list {
+  text-align: center !important;
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.entry-list li {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding-left: 0;
+}
+
+.entry-link {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1000px) {
+  .entry-link {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+

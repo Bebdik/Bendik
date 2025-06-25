@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import WikiLayout from '../../layouts/WikiLayout.astro';
+import IndexLayout from '../../layouts/IndexLayout.astro';
 import SearchBox from '../../components/SearchBox.astro';
 
 
@@ -24,7 +24,7 @@ grouped.get(category).push(entry);
 }
 ---
 
-<WikiLayout title="Worldbuilding Index" tags={[]}>
+<IndexLayout title="Worldbuilding Index" tags={[]}>
   <p class="tome-header">Overview of my worldbuilding project: Mysthralis</p>
   <br>
     <SearchBox placeholder="Search entries..." />
@@ -51,4 +51,4 @@ grouped.get(category).push(entry);
     ))}
   </section>
   </div>
-</WikiLayout>
+</IndexLayout>

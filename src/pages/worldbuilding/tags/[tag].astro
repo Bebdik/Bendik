@@ -1,7 +1,7 @@
 ---
 // src/pages/worldbuilding/tags/[tag].astro
 import { getCollection } from "astro:content";
-import WikiLayout from "../../../layouts/WikiLayout.astro";
+import IndexLayout from '../../../layouts/IndexLayout.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection("worldbuilding");
@@ -26,7 +26,7 @@ const capitalizedTag = tag.charAt(0).toUpperCase() + tag.slice(1);
 const title = `Entries tagged with "${capitalizedTag}"`;
 ---
 
-<WikiLayout title={title} tags={[]}>
+<IndexLayout title={title} tags={[]}>
   {filtered.length === 0 ? (
     <p>No entries found for this tag.</p>
   ) : (
@@ -38,4 +38,4 @@ const title = `Entries tagged with "${capitalizedTag}"`;
       ))}
     </ul>
   )}
-</WikiLayout>
+</IndexLayout>
