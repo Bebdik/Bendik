@@ -154,7 +154,7 @@ hr {
   font-family: var(--font-heading);
   font-size: 1rem;
   color: var(--color-accent);
-  margin: 0.2em 0.3em;
+  margin: 0.2em 0;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.2s, color 0.2s;
@@ -162,6 +162,20 @@ hr {
 .tag-link:hover, .tag-badge:hover {
   background: var(--color-accent);
   color: var(--color-parchment);
+}
+
+.tag-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em 0.6em; /* vertical and horizontal gap */
+  align-items: center;
+}
+
+.tag-block em {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 0.3em;
 }
 
 /* =========================
@@ -196,9 +210,26 @@ hr {
   color: var(--color-accent);
 }
 
+
 /* Wikilink icon */
 .wikilink::before {
   content: "❧ ";
+}
+
+/* Footer social links always have the same color */
+.footer-social a,
+.footer-social a:visited,
+.footer-social a:hover,
+.footer-social a:active {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover,
+.footer-social a:active {
+  text-decoration: underline;
+  color: var(--color-ink-faded); /* Or keep var(--color-accent) if you want no color change on hover */
 }
 
 /* Category Headings & Lists */
@@ -276,12 +307,33 @@ hr {
 /* =========================
    📱 Mobile Tweaks
    ========================= */
+
+@media (max-width: 700px) {
+  .tome-header {
+    margin-bottom: 0.2rem !important;
+    padding-bottom: 0 !important;
+  }
+  .tome-header h1 {
+    margin-bottom: 0.2rem !important;
+    margin-top: 1rem !important;
+  }
+  .tag-block {
+    margin-bottom: 0.2rem !important;
+  }
+  .tome-content h2 {
+    margin-top: 0.2em !important;
+  }
+}
+
+
 @media (max-width: 500px) {
   .tome-header h1 {
     font-size: 1.3rem;
   }
   .book-section {
-    padding: 0.7rem 0.3rem;
+    padding: 0.7rem 0.3rem;   /* Less vertical and horizontal padding */
+    margin: 0.7rem 0;         /* Less gap between sections */
+    font-size: 0.98rem;       /* Optional: slightly smaller text */
   }
   .tome-footer {
     font-size: 0.9rem;
