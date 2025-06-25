@@ -331,7 +331,6 @@ hr {
   }
 }
 
-
 @media (max-width: 500px) {
   .tome-header h1 {
     font-size: 1.3rem;
@@ -343,5 +342,32 @@ hr {
   }
   .tome-footer {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .book-section {
+    padding: 0.4rem 0.2rem;
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+  .book-section button,
+  .book-section .entry-link {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  .book-sections {
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+  }
+  .tome-header h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.7rem;
+  }
+  .tome-footer {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
   }
 }
