@@ -196,6 +196,21 @@ hr {
   margin: 0.5em 0;
 }
 
+/* Footer social links always have the same color and animation */
+.footer-socials a,
+.footer-socials a:visited,
+.footer-socials a:active {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus {
+  color: goldenrod; /* Change to a different color on hover */
+  transition: color 0.2s;
+}
+
 .ancient-link:hover, .entry-link:hover {
   background: var(--color-accent);
   color: var(--color-parchment);
