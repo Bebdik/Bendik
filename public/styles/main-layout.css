@@ -328,6 +328,49 @@ hr {
   margin-top: 0.2rem !important;
   margin-bottom: 0.2rem !important;
   font-size: 0.9rem;
+  
+  
+
+  }
+
+  .ancient-link,
+  .entry-link {
+    display: block;
+    max-width: 95vw;
+    width: 95%;
+    margin: 0.5em auto;
+    box-sizing: border-box;
+  }
+
+    html, body {
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+    body {
+    /* Remove default margin if any */
+    margin: 0;
+  }
+
+  .parchment-wrapper {
+    position: static !important;
+    margin: 2vw 0;
+    /* Keep your width and padding tweaks */
+    width: 94vw;
+    max-width: 94vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: auto;
+    max-height: 98vh;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
