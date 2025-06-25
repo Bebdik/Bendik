@@ -323,6 +323,12 @@ hr {
   .tome-content h2 {
     margin-top: 0.2em !important;
   }
+
+  .tome-footer {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+  font-size: 0.9rem;
+  }
 }
 
 
