@@ -27,7 +27,7 @@ const filtered = entries.filter(
   <ul class="entry-list">
     {filtered.map((entry) => (
       <li>
-        <a class="entry-link" href={`/obsidian-meta/${entry.slug}`}>
+        <a class="entry-link" href={`/obsidian/${entry.slug}`}>
           {entry.data.title}
         </a>
       </li>

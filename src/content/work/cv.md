@@ -7,8 +7,8 @@ location: Larvik, Norway
 email: bendikoettl@gmail.com
 phone: Available upon request
 languages: [English (Fluent), Norwegian (Native), German (Limited)]
-education level: Bachelor
-publish: true
+education level: Bachelorch
+publish: false
 ---
 
 ## Executive Summary
