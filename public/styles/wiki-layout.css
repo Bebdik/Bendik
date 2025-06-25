@@ -234,6 +234,25 @@
 }
 
 /* =========================
+   Linebreaking & Word Wrapping
+   ========================= */
+
+  .wiki-content p {
+  margin: 1.1em 0;
+}
+
+.wiki-content ul,
+.wiki-content ol {
+  margin: 1.2em 0 1.2em 2em;
+  padding-left: 1.2em;
+}
+
+.wiki-content li {
+  margin-bottom: 0.5em;
+}
+
+
+/* =========================
    Making listed items look like tags
    ========================= */
 

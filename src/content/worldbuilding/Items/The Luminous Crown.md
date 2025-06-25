@@ -1,6 +1,5 @@
 ---
 tags: [item]
-
 art: \images\worldbuilding\items\The Luminous Crown.jpg 
 caption: Artwork
 previous holder:
@@ -10,7 +9,6 @@ origin: Forged from the light of a dying star
 title: The Luminous Crown
 category: item
 publish: false
-test:
 ---
 
 
