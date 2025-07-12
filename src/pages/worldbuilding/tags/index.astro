@@ -1,7 +1,7 @@
 ---
 // src/pages/worldbuilding/tags/index.astro
 import { getCollection } from "astro:content";
-import WikiLayout from "../../../layouts/WikiLayout.astro";
+import IndexLayout from '../../../layouts/IndexLayout.astro';
 
 const entries = await getCollection("worldbuilding");
 
@@ -21,7 +21,7 @@ const tagList = Array.from(tagMap.entries()).sort((a, b) =>
 );
 ---
 
-<WikiLayout title="Worldbuilding Tags" tags={[]}>
+<IndexLayout title="Worldbuilding Tags" tags={[]}>
   <section class="tag-index">
     {tagList.length === 0 ? (
       <p>No tags found.</p>
@@ -35,4 +35,4 @@ const tagList = Array.from(tagMap.entries()).sort((a, b) =>
       </div>
     )}
   </section>
-</WikiLayout>
+</IndexLayout>

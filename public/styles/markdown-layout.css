@@ -1,0 +1,95 @@
+/* Typography for markdown content */
+.tome-content {
+  font-family: var(--font-body, 'Crimson Text', serif);
+  font-size: 1.13rem;
+  line-height: 1.7;
+  color: var(--color-ink, #2c1810);
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Headings */
+.tome-content h1,
+.tome-content h2,
+.tome-content h3,
+.tome-content h4 {
+  font-family: var(--font-heading, 'Cinzel', serif);
+  font-weight: 700;
+  color: #4b2e13;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+.tome-content h1 { font-size: 2rem; }
+.tome-content h2 { font-size: 1.5rem; }
+.tome-content h3 { font-size: 1.2rem; }
+.tome-content h4 { font-size: 1.1rem; }
+
+/* Paragraphs and lists */
+.tome-content p {
+  margin: 1.1em 0;
+}
+
+.tome-content ul,
+.tome-content ol {
+  margin: 1.2em 0 1.2em 2em;
+  padding-left: 1.2em;
+}
+
+.tome-content li {
+  margin-bottom: 0.5em;
+}
+
+/* Blockquotes */
+.tome-content blockquote {
+  border-left: 4px solid #e6d4b3;
+  background: #fdf6e4;
+  color: #7a5a36;
+  margin: 1.5em 0;
+  padding: 0.8em 1.2em;
+  font-style: italic;
+  border-radius: 6px;
+}
+
+/* Inline code and code blocks */
+.tome-content code {
+  background: #f9f6ef;
+  color: #8b4513;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 1em;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.tome-content pre {
+  background: #f9f6ef;
+  color: #8b4513;
+  border-radius: 4px;
+  padding: 1em;
+  font-size: 1em;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+
+/* Tag block in header */
+.tag-block {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.tag-badge:hover {
+  background-color: #e6d4b3;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .tome-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

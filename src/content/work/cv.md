@@ -8,7 +8,7 @@ email: bendikoettl@gmail.com
 phone: Available upon request
 languages: [English (Fluent), Norwegian (Native), German (Limited)]
 education level: Bachelor
-publish: true
+publish: false
 ---
 
 ## Executive Summary

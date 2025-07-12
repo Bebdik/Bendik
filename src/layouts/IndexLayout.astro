@@ -1,0 +1,48 @@
+---
+// filepath: src/layouts/IndexLayout.astro
+interface Props {
+  title: string;
+  description?: string;
+  tags?: string[];
+}
+
+const { title, description = "", tags = [] } = Astro.props as Props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main-layout.css" />
+    <link rel="stylesheet" href="/styles/index-layout.css" />
+    <link rel="stylesheet" href="/styles/search-box.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="parchment-wrapper wiki-layout">
+      <header class="tome-header">
+        <h1>{title}</h1>
+        {description && <p class="tome-header">{description}</p>}
+        {tags.length > 0 && (
+          <div class="wiki-tag-wrapper">
+            {tags.map(tag => (
+              <span class="tag-badge">{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+      <main class="wiki-body">
+        <article class="wiki-content">
+          <slot />
+        </article>
+      </main>
+      <footer class="tome-footer">
+        <a class="ancient-link" href="/">← Return to Home</a>
+        <div class="footer-ornament">※</div>
+      </footer>
+    </div>
+  </body>
+</html>
