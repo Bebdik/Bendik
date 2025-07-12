@@ -2,7 +2,7 @@
 title: "The Architect Self"
 tags: [vision, long-building, potential]
 category: "The Types"
-publish: false
+publish: true
 ---
 
 >*Reflective + Structured*

@@ -2,7 +2,7 @@
 title: "The Cartographer Self"
 tags: [mapping, systems, clarity]
 category: "The Types"
-publish: false
+publish: true
 ---
 
 >*Expressive + Structured*

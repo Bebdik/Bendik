@@ -2,7 +2,7 @@
 title: "The Witness Self"
 tags: [stillness, truth, silent empathy]
 category: "The Types"
-publish: false
+publish: true
 ---
 
 >*Reflective + Intuitive*

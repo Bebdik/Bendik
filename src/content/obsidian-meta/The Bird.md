@@ -2,7 +2,7 @@
 title: "The Bird"
 tags: [memory, childhood, analysis]
 category: "Memory Analysis"
-publish: false
+publish: true
 ---
 
 One of the most distinct memories from my childhood is an unexpectedly vivid one. I spent my early school years in a house where a large glass door served as the entrance. I was never very fond of this door for some reason. I think that it is due to how exposed it made the house feel, which is somewhat ironic considering the point I am trying to make. I also once managed to get my finger stuck in it I can't remember if it happened before or after the story I am writing about today. Either way, it doesn’t really matter.

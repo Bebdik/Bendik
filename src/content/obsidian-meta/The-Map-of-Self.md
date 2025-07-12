@@ -2,7 +2,7 @@
 title: "The Map of Self"
 tags: [overview]
 category: "Discovery"
-publish: false
+publish: true
 ---
 
 

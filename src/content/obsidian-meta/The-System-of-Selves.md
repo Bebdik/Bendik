@@ -2,7 +2,7 @@
 title: "The System of Selves"
 tags: [the-selves, self-map, archetype-system]
 category: "The System"
-publish: false
+publish: true
 ---
 
 
