@@ -2,7 +2,7 @@
 title: The Art of Quitting
 tags: [writing-prompt, analysis, quitting]
 category: Writing Prompt Answers
-published: false
+publish: false
 ---
 
 ## Based on the following writing Prompt:
