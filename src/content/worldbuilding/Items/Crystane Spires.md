@@ -5,7 +5,7 @@ art: \images\worldbuilding\items\Crystane Spire.png
 caption: Left - A Crystane Spire draws arcane energy from deep thaumaturgic veins beneath the ground, transmitting it wirelessly through the air. Top-right - A signal hub amplifies and stabilizes the flow of magic. Bottom-right - A mounted receiver disperses the signal to local structures.
 origin: Firbrook, in the greater region of Hyperborea
 tags: [item, science, technology]
-publish: true
+publish: false
 ---
 
 ## Crystane Spires

@@ -14,7 +14,7 @@ aliases:
   - The Star-Mother
 category: Deities
 title: Astrala, The Star-Mother
-publish: true
+publish: false
 ---
 
 ## Overview

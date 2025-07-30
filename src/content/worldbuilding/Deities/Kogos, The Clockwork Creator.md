@@ -16,7 +16,7 @@ symbol: Cogwheel with Eye
 
 category: Deities
 title: Kogos, The Clockwork Creator
-publish: true
+publish: false
 ---
 
 ## Overview

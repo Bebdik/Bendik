@@ -2,7 +2,7 @@
 title: "The Liminal Fool Self"
 tags: [humor, play, mischief, masks]
 category: "The Types"
-publish: true
+publish: false
 ---
 
 >*Expressive + Intuitive*
