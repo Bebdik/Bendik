@@ -12,7 +12,7 @@ publish: false
 
 Crystane Spires are arcane crystalline devices found throughout the county of [[County/Firbrook|Firbrook]], forming the visible components of a broader magical infrastructure known as the Crystal Conduit. This system transmits ambient magical energy across great distances, powered by volatile veins of raw magic buried deep beneath the land.
 
-The process begins at Gathering Spires, where focused crystals are mounted above exposed thaumaturgic veins—remnants of the Great Battle of [[Settlement/Tundyrj|Tun'dyrj]]. These crystals, anchored in place with Binding Resin, draw ambient energy from the depths and transmit it wirelessly to nearby hubs.
+The process begins at Gathering Spires, where focused crystals are mounted above exposed thaumaturgic veins, remnants of the Great Battle of [[Settlement/Tundyrj|Tun'dyrj]]. These crystals, anchored in place with Binding Resin, draw ambient energy from the depths and transmit it wirelessly to nearby hubs.
 
 At key points in the landscape, Signal Hubs amplify and stabilize this energy. These monolithic structures serve as arcane relays, ensuring the current remains strong and attuned as it travels across the network.
 

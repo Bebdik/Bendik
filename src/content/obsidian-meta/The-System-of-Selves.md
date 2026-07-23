@@ -6,7 +6,11 @@ publish: false
 ---
 
 
-This is the symbolic framework of my internal archetypes. Each Self represents a distinct mode of being, thinking, and feeling—mapped along two core axes:
+This is the symbolic framework of my internal archetypes. 
+
+_Please do keep in mind that I am not a psychologist, and this is not a psychological model. It is a personal system of self-understanding, and it is meant to be used as a tool for reflection, creativity, and self-invocation._
+
+Each Self represents a distinct mode of being, thinking, and feeling, mapped along two core axes:
 
 - **Reflective ↔ Expressive**
 

@@ -38,7 +38,7 @@ Kogos is a deity who represents the potential for order within chaos, the spark 
 
 ## Appearance
 
-Kogos is depicted as a towering figure composed entirely of intricate gears, cogs, and other mechanical parts. His form constantly shifts, as though he is perpetually building and improving himself. The divine gears are of various metals—bronze, iron, silver, and gold—each piece humming with energy. His eyes are brilliant orbs of pure light, casting a calm, analytical gaze over his creations. His voice is a resonant, metallic sound, as if each word is forged from the grinding of gears and the hammering of anvils.
+Kogos is depicted as a towering figure composed entirely of intricate gears, cogs, and other mechanical parts. His form constantly shifts, as though he is perpetually building and improving himself. The divine gears are of various metals. Bronze, iron, silver, and gold, each piece humming with energy. His eyes are brilliant orbs of pure light, casting a calm, analytical gaze over his creations. His voice is a resonant, metallic sound, as if each word is forged from the grinding of gears and the hammering of anvils.
 
 ## Personality
 
@@ -95,7 +95,7 @@ The [[Campaign/Organizations/Guild of Gears|Guild of Gears]], a prestigious asse
 
 ### Rivalries:
 
-- **Zyphira, the Windweaver:** The goddess of chaos, storms, and unpredictability, Zyphira represents everything that Kogos seeks to control and minimize. While not outright enemies, their philosophies clash—Zyphira's love for spontaneity and wild nature is an affront to Kogos' ideals of order and precision. Their followers often find themselves at odds, particularly in places where nature and technology meet.
+- **Zyphira, the Windweaver:** The goddess of chaos, storms, and unpredictability, Zyphira represents everything that Kogos seeks to control and minimize. While not outright enemies, their philosophies clash. Zyphira's love for spontaneity and wild nature is an affront to Kogos' ideals of order and precision. Their followers often find themselves at odds, particularly in places where nature and technology meet.
 
 - **Sylvara, the Wildheart:** The goddess of nature, growth, and the untamed wilderness, Sylvara and Kogos have a tense relationship. Kogos sees nature as something to be understood, controlled, and improved upon, while Sylvara views his attempts as a violation of the natural order. Their followers often disagree on matters of industrialization and the expansion of civilization into natural areas.
     
@@ -117,7 +117,7 @@ The [[Campaign/Organizations/Guild of Gears|Guild of Gears]], a prestigious asse
 
 **Early Works:** In the earliest days, Kogos focused on the grand mechanisms of the cosmos. He crafted the celestial spheres, the clockwork of the heavens, ensuring that the stars and planets moved in perfect harmony. He established the principles of time, gravity, and the mechanics that govern all matter. These early creations were the foundation upon which the universe itself would operate, and they are revered as his most sublime works.
 
-**The Age of Gears:** As mortals began to appear and civilizations grew, Kogos turned his attention to the material world. Observing the burgeoning creativity of mortals, he became fascinated by their potential to harness the power of mechanics and invention. He began to reveal fragments of his divine knowledge to chosen individuals—engineers, inventors, and scholars—who would later form the first [[Guild of Gears]]. Through them, Kogos introduced the concepts of gears, levers, and other mechanisms that revolutionized early technologies.
+**The Age of Gears:** As mortals began to appear and civilizations grew, Kogos turned his attention to the material world. Observing the burgeoning creativity of mortals, he became fascinated by their potential to harness the power of mechanics and invention. He began to reveal fragments of his divine knowledge to chosen individuals, engineers, inventors, and scholars, who would later form the first [[Guild of Gears]]. Through them, Kogos introduced the concepts of gears, levers, and other mechanisms that revolutionized early technologies.
 
 During this period, Kogos was more active among mortals, directly influencing the development of civilizations. He blessed certain cities and cultures with advanced knowledge, leading to golden ages of innovation where magnificent machines and intricate clockwork devices were created in his honor.
 

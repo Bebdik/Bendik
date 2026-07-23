@@ -38,7 +38,7 @@ I find myself in this state when I need relief from coherence. When seriousness 
 
 - What part of this is only serious because I’ve decided it must be?
     
-- What mask am I already wearing—and what would happen if I wore a louder one?
+- What mask am I already wearing, and what would happen if I wore a louder one?
     
 - What absurd image, phrase, or voice has been haunting me lately?
     

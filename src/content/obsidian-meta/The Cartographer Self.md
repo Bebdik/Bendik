@@ -17,7 +17,7 @@ That said, the Cartographer is not limited to the analytical or academic. It is 
 
 Its danger lies in over-definition. The Cartographer may try to stabilize what is still evolving, or mistake a map for the terrain. It can reduce ambiguity too quickly, creating systems that oversimplify or distort the complexity they were meant to honor. And like all expressive Selves, it risks becoming performative, tailoring maps for approval rather than for understanding.
 
-But when grounded, the Cartographer provides something invaluable: orientation. It allows you to move through experience with markers, anchors, and known shapes. It returns a sense of agency in uncertainty—not by dismissing the unknown, but by naming what can be known, even if temporarily.
+But when grounded, the Cartographer provides something invaluable: orientation. It allows you to move through experience with markers, anchors, and known shapes. It returns a sense of agency in uncertainty, not by dismissing the unknown, but by naming what can be known, even if temporarily.
 
 The Cartographer Self shows itself when the idea evolves into a plan, or when chaos turns into order. It turns the inner monologue into dialogue, whether that is for one or for many. The Cartographer shares, and gives form to insight.   
 
