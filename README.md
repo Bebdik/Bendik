@@ -2,26 +2,30 @@
 
 This repository contains the source code, history, and deployment configuration for my personal website [**bebdik.com**](https://www.bebdik.com), built using [Astro](https://astro.build/).
 
+Please keep in mind that AI has been used to clean up text, and also fixing config files for Astro components. This was mainly intended as a project for brushing up on webdev skills, as well as learning how to use git comfortably. 
+
+Don't take any of the content too seriously. A lot is nerdy worldbuidling, and the rest is mostly ramblings as a creative outlet. 
+
 ---
 
-## 🌍 Live Site
+## Live Site
 
 Visit the site at:  
-🔗 [https://www.bebdik.com](https://www.bebdik.com)
+[https://www.bebdik.com](https://www.bebdik.com)
 
-## 🖼️ Site Previews
+## Site Previews
 
-### 💻 Desktop View
+### Desktop View
 
 ![Homepage (Desktop)](assets/screenshots/homepage-desktop.png)
 
 ---
 
-## 🧪 Development
+## Development
 
 All active development happens in the `astro-dev` branch.
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Tool / Technology                 | Purpose                                                        |
 | --------------------------------- | -------------------------------------------------------------- |
@@ -34,9 +38,9 @@ All active development happens in the `astro-dev` branch.
 | [**npm**](https://www.npmjs.com/) | Package management and script running                          |
 | **Custom Domain**                 | `www.bebdik.com` — linked to GitHub Pages                      |
 
-## 🛠️ To-Do List
+## To-Do List
 
-<details> <summary><strong>📂 Site Structure & Content</strong></summary>
+<details> <summary><strong> Site Structure & Content</strong></summary>
  
  Create the Work / Portfolio section
 
@@ -44,7 +48,9 @@ All active development happens in the `astro-dev` branch.
 
  Add more content to the Worldbuilding page
 
-</details> <details> <summary><strong>🎨 Design & User Experience</strong></summary>
+ Rewrite parts of Obsidian content
+
+</details> <details> <summary><strong> Design & User Experience</strong></summary>
  
  Implement light/dark mode toggle
 
